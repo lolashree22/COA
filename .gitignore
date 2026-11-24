@@ -1,0 +1,35 @@
+# Python caches & virtual environments
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Local simulation outputs & exported CSVs
+results/
+*.csv
+
+# Frontend dependencies & build outputs
+frontend/node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# Environment & secret files
+.env
+.env.*
+!.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# OS & editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+

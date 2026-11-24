@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;family=Syne:wght@400..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"error":"#ba1a1a","surface-container-highest":"#e5e2da","on-secondary":"#ffffff","on-secondary-fixed-variant":"#474646","tertiary":"#5e5f58","surface-bright":"#fcf9f1","surface-variant":"#e5e2da","surface":"#fcf9f1","on-tertiary-container":"#64655e","background":"#fcf9f1","on-surface":"#1c1c17","tertiary-fixed":"#e4e3da","inverse-primary":"#add450","surface-dim":"#dddad2","on-tertiary-fixed-variant":"#464741","on-primary":"#ffffff","inverse-on-surface":"#f4f1e9","on-secondary-container":"#636262","outline-variant":"#c4c9b2","outline":"#757966","on-error-container":"#93000a","on-background":"#1c1c17","surface-tint":"#4d6700","surface-container":"#f1eee6","on-tertiary":"#ffffff","on-primary-fixed":"#151f00","surface-container-high":"#ebe8e0","secondary-fixed-dim":"#c8c6c5","on-error":"#ffffff","inverse-surface":"#31312b","on-surface-variant":"#444938","primary-fixed":"#c8f169","secondary-container":"#e2dfde","on-primary-fixed-variant":"#394d00","tertiary-fixed-dim":"#c7c7be","primary-fixed-dim":"#add450","secondary":"#5f5e5e","on-tertiary-fixed":"#1b1c17","primary":"#4d6700","error-container":"#ffdad6","secondary-fixed":"#e5e2e1","surface-container-lowest":"#ffffff","surface-container-low":"#f6f3eb","on-primary-container":"#516d00","primary-container":"#c8f169","on-secondary-fixed":"#1c1b1b","tertiary-container":"#e4e3da"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","gutter-lg":"2rem","space-2xl":"4rem","margin":"1rem","gutter-md":"1.5rem","margin-lg":"3rem","space-xl":"2.5rem","margin-md":"2rem","gutter":"1rem","space-md":"1rem","space-xs":"0.25rem","space-sm":"0.5rem"},"fontFamily":{"label-md":["Space Mono"],"body-sm":["Space Mono"],"headline-lg":["Syne"],"body-md":["Space Mono"],"headline-sm":["Syne"],"headline-2xl-mobile":["Syne"],"headline-2xl":["Syne"],"body-lg":["Space Mono"],"label-sm":["Space Mono"],"headline-xl-mobile":["Syne"],"headline-md":["Syne"],"label-lg":["Space Mono"],"headline-xl":["Syne"]},"fontSize":{"label-md":["0.75rem",{"lineHeight":"1.2","letterSpacing":"0.08em","fontWeight":"700"}],"body-sm":["0.75rem",{"lineHeight":"1.6","letterSpacing":"0.02em","fontWeight":"400"}],"headline-lg":["2.25rem",{"lineHeight":"1.05","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["0.875rem",{"lineHeight":"1.55","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["1.125rem",{"lineHeight":"1.25","letterSpacing":"0em","fontWeight":"600"}],"headline-2xl-mobile":["3rem",{"lineHeight":"0.95","letterSpacing":"-0.03em","fontWeight":"800"}],"headline-2xl":["5.5rem",{"lineHeight":"0.92","letterSpacing":"-0.04em","fontWeight":"800"}],"body-lg":["1rem",{"lineHeight":"1.5","letterSpacing":"-0.01em","fontWeight":"400"}],"label-sm":["0.625rem",{"lineHeight":"1.1","letterSpacing":"0.1em","fontWeight":"700"}],"headline-xl-mobile":["2.25rem",{"lineHeight":"1.0","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["1.5rem",{"lineHeight":"1.15","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["0.875rem",{"lineHeight":"1.2","letterSpacing":"0.05em","fontWeight":"700"}],"headline-xl":["3.75rem",{"lineHeight":"0.96","letterSpacing":"-0.03em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface border-b border-on-surface"><div class="h-16 w-full px-margin-md lg:px-margin-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface">EXAMCORE</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 bg-surface-container-high border border-on-surface text-on-surface">25BTRIS028</span></div><nav class="hidden md:flex items-center h-full border-x border-on-surface" data-active-classes="bg-on-surface text-surface"><a class="h-full px-space-lg flex items-center font-label-md text-label-md uppercase text-on-surface-variant hover:bg-on-surface hover:text-surface transition-colors border-r border-on-surface last:border-r-0" data-path="overview" href="#">Overview</a><a aria-current="page" class="h-full px-space-lg flex items-center font-label-md uppercase transition-colors border-r border-on-surface last:border-r-0 bg-on-surface text-surface" data-path="simulator" href="#">Simulator</a><a class="h-full px-space-lg flex items-center font-label-md text-label-md uppercase text-on-surface-variant hover:bg-on-surface hover:text-surface transition-colors border-r border-on-surface last:border-r-0" data-path="results" href="#">Results</a><a class="h-full px-space-lg flex items-center font-label-md text-label-md uppercase text-on-surface-variant hover:bg-on-surface hover:text-surface transition-colors" data-path="about" href="#">About</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container border border-on-surface"><span class="w-2 h-2 bg-primary-container inline-block"></span><span class="font-label-sm text-label-sm uppercase text-on-surface">SYS: READY</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 flex-1 bg-surface"><div class="flex flex-col w-full">
+<!-- TOP TELEMETRY META HEADER -->
+<div class="w-full bg-surface border-b border-on-surface px-margin-md lg:px-margin-lg py-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface">01.00 // SIMULATION BENCHMARK &amp; EXECUTION ENGINE</span>
+<span class="w-1.5 h-1.5 bg-on-surface"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">HOST: EXAM-HYPERVISOR-09</span>
+</div>
+<div class="flex items-center gap-space-lg font-label-sm text-label-sm text-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="inline-block w-2 h-2 bg-primary-container"></span>
+<span>SCHEDULER: PREEMPTIVE_RT</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="text-on-surface-variant">SYS_TICK:</span>
+<span>1000 HZ</span>
+</div>
+</div>
+</div>
+<!-- TITLE BLOCK -->
+<div class="w-full bg-surface border-b border-on-surface px-margin-md lg:px-margin-lg py-space-xl">
+<div class="max-w-7xl">
+<h1 class="font-headline-2xl text-headline-xl lg:text-headline-2xl uppercase tracking-tighter text-on-surface leading-none m-0">
+        CPU SCHEDULING LAB
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm max-w-2xl">
+        Simulate how examination requests compete for CPU time. Benchmark real-time context latency, convoy bottlenecks, and fair-share quantum degradation under concurrent examinee surges.
+      </p>
+</div>
+</div>
+<!-- MAIN OPERATIONAL WORKSPACE (2 COLUMNS) -->
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 border-b border-on-surface">
+<!-- LEFT PANEL: SIMULATION CONFIG & WORKLOAD CONTROLS -->
+<div class="lg:col-span-5 bg-surface border-b lg:border-b-0 lg:border-r border-on-surface flex flex-col justify-between">
+<div>
+<!-- Subsection 1 Header -->
+<div class="px-margin-md py-space-sm bg-surface-container border-b border-on-surface flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface">CONFIG PANEL // BURST CONTROLS</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">[SECTION: 01-A]</span>
+</div>
+<div class="p-margin-md flex flex-col gap-space-xl">
+<!-- Concurrent Students Burst Selector -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm uppercase text-on-surface tracking-wider">CONCURRENT STUDENTS (BURST)</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">TARGET LOAD</span>
+</div>
+<div class="grid grid-cols-5 border border-on-surface bg-surface">
+<button class="burst-btn py-space-sm font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-colors border-r border-on-surface last:border-r-0" onclick="setBurst(10, this)" type="button">10</button>
+<button class="burst-btn py-space-sm font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-colors border-r border-on-surface last:border-r-0" onclick="setBurst(25, this)" type="button">25</button>
+<button class="burst-btn py-space-sm font-label-md text-label-md bg-on-surface text-surface transition-colors border-r border-on-surface last:border-r-0" onclick="setBurst(50, this)" type="button">50</button>
+<button class="burst-btn py-space-sm font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-colors border-r border-on-surface last:border-r-0" onclick="setBurst(100, this)" type="button">100</button>
+<button class="burst-btn py-space-sm font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-colors last:border-r-0" onclick="setBurst(200, this)" type="button">200</button>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mt-1">
+<span>MIN: 10 THREADS</span>
+<span class="text-on-surface font-bold" id="active-burst-label">50 ACTIVE INCOMING CONNECTIONS</span>
+<span>MAX: 200</span>
+</div>
+</div>
+<!-- Dispatch Policy Selection -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm uppercase text-on-surface tracking-wider">DISPATCH POLICY / ALGORITHM</label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<!-- FCFS Radio Block -->
+<div class="cursor-pointer border border-on-surface p-space-md bg-surface hover:bg-surface-container transition-colors flex flex-col justify-between h-32" id="policy-fcfs" onclick="selectPolicy('FCFS')">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">FCFS</span>
+<div class="w-4 h-4 border border-on-surface flex items-center justify-center p-0.5" id="radio-fcfs-mark">
+<span class="w-full h-full bg-transparent"></span>
+</div>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+                  First-Come First-Served. Non-preemptive convoy queue. Vulnerable to head-of-line blocking.
+                </div>
+</div>
+<!-- Round Robin Radio Block -->
+<div class="cursor-pointer border-2 border-on-surface p-space-md bg-surface-container-high flex flex-col justify-between h-32 shadow-[3px_3px_0px_#1c1c17]" id="policy-rr" onclick="selectPolicy('RR')">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">ROUND ROBIN</span>
+<div class="w-4 h-4 border border-on-surface flex items-center justify-center p-0.5" id="radio-rr-mark">
+<span class="w-full h-full bg-primary-container"></span>
+</div>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface leading-snug">
+                  Time-Sliced Preemptive. Interleaved fairness; responsive user experience during examinee spikes.
+                </div>
+</div>
+</div>
+</div>
+<!-- Time Quantum Stepper (For Round Robin) -->
+<div class="border border-on-surface p-space-md bg-surface-container-low flex flex-col gap-space-xs" id="quantum-control-wrapper">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface">TIME QUANTUM (Q)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SLICE INTERVAL</span>
+</div>
+<div class="flex items-center justify-between bg-surface border border-on-surface p-1">
+<button class="w-10 h-10 border border-on-surface bg-surface hover:bg-on-surface hover:text-surface font-label-md text-label-md flex items-center justify-center transition-colors" onclick="adjustQuantum(-0.5)" type="button">
+                −
+              </button>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface" id="quantum-value">5.0</span>
+<span class="font-label-md text-label-md text-on-surface-variant">ms</span>
+</div>
+<button class="w-10 h-10 border border-on-surface bg-surface hover:bg-on-surface hover:text-surface font-label-md text-label-md flex items-center justify-center transition-colors" onclick="adjustQuantum(0.5)" type="button">
+                +
+              </button>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mt-1">
+<span>SYS RECOM: 4.0ms – 8.0ms</span>
+<span class="text-on-surface">INTERRUPT OVERHEAD: 0.12ms</span>
+</div>
+</div>
+<!-- Workload Payload Composition -->
+<div class="flex flex-col gap-space-xs border border-on-surface p-space-md bg-surface">
+<div class="flex items-center justify-between border-b border-on-surface pb-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-on-surface">WORKLOAD PAYLOAD COMPOSITION</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">N=50 SEED</span>
+</div>
+<div class="w-full h-3 border border-on-surface flex my-space-xs bg-surface-container">
+<div class="h-full bg-on-surface" style="width: 45%;" title="Fetch Question (45%)"></div>
+<div class="h-full bg-primary-container" style="width: 35%;" title="Auto-Save Sync (35%)"></div>
+<div class="h-full bg-outline" style="width: 20%;" title="Sha256 Submit (20%)"></div>
+</div>
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 bg-on-surface inline-block"></span>
+<span>FETCH (45%)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 bg-primary-container inline-block"></span>
+<span>SYNC (35%)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 bg-outline inline-block"></span>
+<span>SUBMIT (20%)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Triggers Footer -->
+<div class="p-margin-md border-t border-on-surface bg-surface-container flex flex-col sm:flex-row items-center gap-space-md">
+<button class="w-full sm:flex-1 py-space-md px-space-lg bg-primary-container hover:bg-on-surface text-on-surface hover:text-primary-container border border-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors flex items-center justify-center gap-space-sm shadow-[3px_3px_0px_#1c1c17]" id="btn-start" onclick="toggleSimulation()">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+<span id="start-label">START SIMULATION</span>
+</button>
+<button class="w-full sm:w-auto py-space-md px-space-md bg-surface hover:bg-on-surface text-on-surface hover:text-surface border border-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors whitespace-nowrap" onclick="regenerateWorkload()" type="button">
+          GENERATE WORKLOAD
+        </button>
+<button class="py-space-md px-space-sm text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase flex items-center gap-1" onclick="resetEngine()" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>RESET</span>
+</button>
+</div>
+</div>
+<!-- RIGHT PANEL: INTERACTIVE HARDWARE CORE BAY -->
+<div class="lg:col-span-7 bg-surface flex flex-col justify-between">
+<div>
+<!-- Core Bay Title Strip -->
+<div class="px-margin-md py-space-sm bg-surface-container border-b border-on-surface flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface">CORE 0 EXECUTION BAY</span>
+<div class="flex items-center gap-1 px-2 py-0.5 bg-surface border border-on-surface">
+<span class="w-2 h-2 bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase font-bold">PROCESSING</span>
+</div>
+</div>
+<div class="font-label-md text-label-md text-on-surface">
+<span class="text-on-surface-variant font-normal">SIM_CLOCK:</span> T = <span class="font-bold" id="sim-clock-display">00:014.20 ms</span>
+</div>
+</div>
+<div class="p-margin-md flex flex-col gap-space-lg">
+<!-- Active Process Context Terminal Block -->
+<div class="border-2 border-on-surface bg-surface-container-lowest p-space-md shadow-[4px_4px_0px_#1c1c17] relative">
+<div class="absolute -top-3 left-4 bg-on-surface text-surface font-label-sm text-label-sm px-2 py-0.5 uppercase tracking-widest">
+              L1 RUNNING REGISTER
+            </div>
+<div class="mt-space-xs flex flex-col md:flex-row md:items-center justify-between gap-space-md border-b border-on-surface pb-space-md">
+<div>
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 bg-primary-container inline-block"></span>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">#P104: AUTO_SAVE_SYNC</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">
+                  PID: 0x047A // THREAD: STD_WORKER_04 // USER: USN-25BTRIS028
+                </div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="text-right">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">BURST CONSUMED</div>
+<div class="font-label-lg text-label-lg text-on-surface">2.4ms / 5.0ms (SLICE)</div>
+</div>
+<div class="w-12 h-12 border border-on-surface bg-surface-container flex items-center justify-center">
+<span class="font-headline-sm text-headline-sm text-on-surface">48%</span>
+</div>
+</div>
+</div>
+<!-- Quantum Progress Bar -->
+<div class="mt-space-md">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mb-1">
+<span>SLICE TIME ALLOCATION (Q=5.0ms)</span>
+<span class="text-on-surface font-bold">2.6ms REMAINING BEFORE IRQ</span>
+</div>
+<div class="w-full h-4 border border-on-surface bg-surface-container p-0.5">
+<div class="h-full bg-primary-container border-r border-on-surface transition-all duration-300" id="quantum-progress-bar" style="width: 48%;"></div>
+</div>
+</div>
+<!-- Register Diagnostics Strip -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-xs mt-space-md pt-space-md border-t border-on-surface/30 font-label-sm text-label-sm">
+<div class="p-1 bg-surface border border-on-surface">
+<span class="text-on-surface-variant block">REG_PC:</span>
+<span class="text-on-surface font-bold">0x00FF892A</span>
+</div>
+<div class="p-1 bg-surface border border-on-surface">
+<span class="text-on-surface-variant block">PRIORITY:</span>
+<span class="text-on-surface font-bold">PR-0 (REALTIME)</span>
+</div>
+<div class="p-1 bg-surface border border-on-surface">
+<span class="text-on-surface-variant block">MEM_FOOTPRINT:</span>
+<span class="text-on-surface font-bold">4.20 MB</span>
+</div>
+<div class="p-1 bg-surface border border-on-surface">
+<span class="text-on-surface-variant block">CPU_AFFINITY:</span>
+<span class="text-on-surface font-bold">AFF_CORE_0</span>
+</div>
+</div>
+</div>
+<!-- READY QUEUE (FIFO Buffer) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between border-b border-on-surface pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase text-on-surface">READY QUEUE (FIFO BUFFER)</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 bg-on-surface text-surface">DEPTH: 5</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">DISPATCH ORDER &gt;&gt;</span>
+</div>
+<!-- Queue Horizontal Strip -->
+<div class="grid grid-cols-1 sm:grid-cols-4 gap-space-xs mt-space-xs">
+<!-- Item 1 -->
+<div class="border border-on-surface p-space-sm bg-surface-container flex flex-col justify-between relative">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">#P105</span>
+<span class="text-on-surface-variant">POS: 01</span>
+</div>
+<div class="my-space-xs">
+<div class="font-label-sm text-label-sm font-bold text-on-surface">FETCH_QUESTION</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Burst: 6.2ms</div>
+</div>
+<div class="w-full bg-on-surface text-surface font-label-sm text-label-sm text-center py-0.5">
+                  NEXT DISPATCH
+                </div>
+</div>
+<!-- Item 2 -->
+<div class="border border-on-surface p-space-sm bg-surface flex flex-col justify-between">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">#P106</span>
+<span class="text-on-surface-variant">POS: 02</span>
+</div>
+<div class="my-space-xs">
+<div class="font-label-sm text-label-sm font-bold text-on-surface">SHA256_SUBMIT</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Burst: 12.0ms</div>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant border-t border-on-surface/20 pt-1">
+                  Wait: 8.4ms
+                </div>
+</div>
+<!-- Item 3 -->
+<div class="border border-on-surface p-space-sm bg-surface flex flex-col justify-between">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">#P107</span>
+<span class="text-on-surface-variant">POS: 03</span>
+</div>
+<div class="my-space-xs">
+<div class="font-label-sm text-label-sm font-bold text-on-surface">AUTO_SAVE_SYNC</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Burst: 3.5ms</div>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant border-t border-on-surface/20 pt-1">
+                  Wait: 14.1ms
+                </div>
+</div>
+<!-- Item 4 (Preempted returned slice) -->
+<div class="border border-dashed border-on-surface p-space-sm bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">#P108</span>
+<span class="text-on-surface-variant">POS: 04</span>
+</div>
+<div class="my-space-xs">
+<div class="font-label-sm text-label-sm font-bold text-on-surface">FETCH_QUESTION</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Burst: 4.0ms (Rem)</div>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant border-t border-on-surface/20 pt-1">
+                  Wait: 19.8ms
+                </div>
+</div>
+</div>
+</div>
+<!-- COMPLETED TASKS REGISTRY -->
+<div class="border border-on-surface bg-surface-container p-space-md">
+<div class="flex items-center justify-between border-b border-on-surface pb-space-xs mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase text-on-surface">COMPLETED EXAM TRANSACTIONS</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">24 / 50 COMPLETED (48%)</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<div class="flex items-center gap-1 px-2 py-1 bg-surface border border-on-surface font-label-sm text-label-sm text-on-surface">
+<span class="text-primary font-bold">✓</span> #P101 [1.8ms]
+              </div>
+<div class="flex items-center gap-1 px-2 py-1 bg-surface border border-on-surface font-label-sm text-label-sm text-on-surface">
+<span class="text-primary font-bold">✓</span> #P102 [4.5ms]
+              </div>
+<div class="flex items-center gap-1 px-2 py-1 bg-surface border border-on-surface font-label-sm text-label-sm text-on-surface">
+<span class="text-primary font-bold">✓</span> #P103 [3.0ms]
+              </div>
+<div class="flex items-center gap-1 px-2 py-1 bg-surface border border-on-surface font-label-sm text-label-sm text-on-surface">
+<span class="text-primary font-bold">✓</span> #P099 [2.1ms]
+              </div>
+<div class="flex items-center gap-1 px-2 py-1 bg-surface border border-on-surface font-label-sm text-label-sm text-on-surface">
+<span class="text-primary font-bold">✓</span> #P100 [5.0ms]
+              </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-2">+19 RETIRED TO DISK</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Core Bay Diagnostics Sub-Strip -->
+<div class="px-margin-md py-space-sm border-t border-on-surface bg-surface-container flex items-center justify-between font-label-sm text-label-sm text-on-surface">
+<div class="flex items-center gap-space-md">
+<span>THROUGHPUT: <strong>7.14 TX/SEC</strong></span>
+<span class="hidden md:inline text-on-surface-variant">//</span>
+<span class="hidden md:inline">AVG WAIT: <strong>4.82 MS</strong></span>
+</div>
+<div>
+<span>UTILISATION: <strong>94.6%</strong></span>
+</div>
+</div>
+</div>
+</div>
+<!-- FULL-WIDTH EXECUTION TIMELINE (GANTT CHART) -->
+<div class="w-full bg-surface border-b border-on-surface flex flex-col">
+<!-- Gantt Header Strip -->
+<div class="px-margin-md lg:px-margin-lg py-space-sm bg-surface-container border-b border-on-surface flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">CHRONOLOGICAL GANTT TIMELINE</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">[TRACING: CORE_0]</span>
+</div>
+<!-- Gantt Legend -->
+<div class="flex flex-wrap items-center gap-space-md font-label-sm text-label-sm text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 bg-primary-container border border-on-surface inline-block"></span>
+<span>PREEMPTED SLICE</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 bg-on-surface inline-block"></span>
+<span>FCFS LOCK-IN</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 bg-surface-dim border border-on-surface inline-block"></span>
+<span>CONTEXT SWITCH (CS)</span>
+</div>
+</div>
+</div>
+<!-- Interactive Visual Timeline Canvas -->
+<div class="p-margin-md lg:p-margin-lg overflow-x-auto">
+<div class="min-w-[760px] flex flex-col gap-space-xs">
+<!-- Scale Ruler -->
+<div class="w-full grid grid-cols-8 font-label-sm text-label-sm text-on-surface-variant border-b border-on-surface pb-1">
+<div>T = 0.0ms</div>
+<div>5.0ms</div>
+<div>10.0ms</div>
+<div>15.0ms</div>
+<div>20.0ms</div>
+<div>25.0ms</div>
+<div>30.0ms</div>
+<div class="text-right">40.0ms</div>
+</div>
+<!-- Gantt Bars Container -->
+<div class="w-full h-16 border-2 border-on-surface bg-surface-container flex relative">
+<!-- Block 1: P101 (Completed Slice) -->
+<div class="h-full bg-primary-container border-r border-on-surface flex flex-col justify-center px-2 relative group cursor-pointer" style="width: 12.5%;">
+<span class="font-label-sm text-label-sm font-bold text-on-surface truncate">#P101</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">5.0ms [Q]</span>
+</div>
+<!-- Context Switch gap -->
+<div class="h-full bg-surface-dim border-r border-on-surface flex items-center justify-center" style="width: 2%;" title="Context Switch: 0.12ms">
+<span class="font-label-sm text-label-sm text-[8px] transform -rotate-90">CS</span>
+</div>
+<!-- Block 2: P102 -->
+<div class="h-full bg-on-surface text-surface border-r border-on-surface flex flex-col justify-center px-2 relative group cursor-pointer" style="width: 12.5%;">
+<span class="font-label-sm text-label-sm font-bold truncate">#P102</span>
+<span class="font-label-sm text-label-sm text-surface-container-high text-[10px]">5.0ms [Q]</span>
+</div>
+<!-- Context Switch gap -->
+<div class="h-full bg-surface-dim border-r border-on-surface flex items-center justify-center" style="width: 2%;">
+<span class="font-label-sm text-label-sm text-[8px] transform -rotate-90">CS</span>
+</div>
+<!-- Block 3: P103 -->
+<div class="h-full bg-primary-container border-r border-on-surface flex flex-col justify-center px-2 relative group cursor-pointer" style="width: 10%;">
+<span class="font-label-sm text-label-sm font-bold text-on-surface truncate">#P103</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">4.0ms [FIN]</span>
+</div>
+<!-- Context Switch gap -->
+<div class="h-full bg-surface-dim border-r border-on-surface flex items-center justify-center" style="width: 2%;">
+<span class="font-label-sm text-label-sm text-[8px] transform -rotate-90">CS</span>
+</div>
+<!-- Block 4: P104 (Currently Running Slice 1) -->
+<div class="h-full bg-primary-container border-r-2 border-on-surface flex flex-col justify-center px-2 relative ring-2 ring-on-surface" style="width: 12.5%;">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">#P104 [NOW]</span>
+<span class="w-2 h-2 bg-on-surface inline-block"></span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">2.4 / 5.0ms</span>
+</div>
+<!-- Projected Queue / Empty buffer -->
+<div class="h-full bg-surface-container-lowest border-r border-dashed border-on-surface/50 flex flex-col justify-center px-2 opacity-50" style="width: 15%;">
+<span class="font-label-sm text-label-sm text-on-surface-variant italic truncate">&gt;&gt; #P105 (QUEUED)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">est 5.0ms</span>
+</div>
+<div class="h-full bg-surface-container-lowest border-r border-dashed border-on-surface/50 flex flex-col justify-center px-2 opacity-30" style="width: 20%;">
+<span class="font-label-sm text-label-sm text-on-surface-variant italic truncate">&gt;&gt; #P106 (QUEUED)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">est 5.0ms</span>
+</div>
+<div class="flex-1 bg-surface-container-high flex items-center justify-center opacity-20">
+<span class="font-label-sm text-label-sm">SLOT FREE</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Playback Controls & Live Diagnostics Footbar -->
+<div class="px-margin-md lg:px-margin-lg py-space-sm border-t border-on-surface bg-surface flex flex-wrap items-center justify-between gap-space-md">
+<!-- Playback buttons -->
+<div class="flex items-center border border-on-surface bg-surface">
+<button class="px-space-md py-space-xs font-label-md text-label-md bg-on-surface text-surface hover:bg-primary-container hover:text-on-surface transition-colors flex items-center gap-1 border-r border-on-surface" onclick="playStep()" type="button">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span> PLAY
+        </button>
+<button class="px-space-md py-space-xs font-label-md text-label-md bg-surface hover:bg-surface-container-high text-on-surface transition-colors flex items-center gap-1 border-r border-on-surface" type="button">
+<span class="material-symbols-outlined text-[16px]">pause</span> PAUSE
+        </button>
+<button class="px-space-md py-space-xs font-label-md text-label-md bg-surface hover:bg-surface-container-high text-on-surface transition-colors flex items-center gap-1 border-r border-on-surface" onclick="stepForward()" type="button">
+<span class="material-symbols-outlined text-[16px]">fast_forward</span> STEP (+1ms)
+        </button>
+<button class="px-space-md py-space-xs font-label-md text-label-md bg-surface hover:bg-surface-container-high text-on-surface transition-colors flex items-center gap-1" onclick="resetEngine()" type="button">
+<span class="material-symbols-outlined text-[16px]">replay</span> RESET
+        </button>
+</div>
+<!-- Live metrics readout -->
+<div class="flex flex-wrap items-center gap-space-lg font-label-sm text-label-sm text-on-surface">
+<div>CURRENT ELAPSED: <span class="font-bold">18.4ms</span></div>
+<span class="text-outline-variant">|</span>
+<div>CONTEXT SWITCHES: <span class="font-bold">6</span></div>
+<span class="text-outline-variant">|</span>
+<div class="flex items-center gap-1">
+<span class="text-on-surface-variant">INTERRUPTION:</span>
+<span class="px-1.5 py-0.5 bg-surface-container-high border border-on-surface font-bold">TIMER IRQ #0</span>
+</div>
+</div>
+</div>
+</div>
+<!-- BENCHMARK TELEMETRY SPECIFICATION ARCHITECTURE -->
+<div class="w-full bg-surface-container-low p-margin-md lg:p-margin-lg border-b border-on-surface">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="border border-on-surface p-space-md bg-surface">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-1">METRIC IDENTIFIER 01</div>
+<div class="font-headline-sm text-headline-sm uppercase text-on-surface mb-2">CONVOY MITIGATION</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          FCFS policies trigger head-of-line starvation when multi-part Sha256 exams stall behind simple query fetches. Round Robin with Q=5ms bounds tail latency to 18.2ms max.
+        </p>
+</div>
+<div class="border border-on-surface p-space-md bg-surface">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-1">METRIC IDENTIFIER 02</div>
+<div class="font-headline-sm text-headline-sm uppercase text-on-surface mb-2">QUANTUM OPTIMALITY</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          If Q &lt; 2.0ms, CPU efficiency drops below 78% due to context switch cache misses. If Q &gt; 12.0ms, interactive student response degrades into convoy latency patterns.
+        </p>
+</div>
+<div class="border border-on-surface p-space-md bg-surface">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-1">METRIC IDENTIFIER 03</div>
+<div class="font-headline-sm text-headline-sm uppercase text-on-surface mb-2">SURGE TOLERANCE</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Simulated under 200 examinees submitting synchronized checksums at examination deadline. Preemption prevents socket starvation across candidate terminals.
+        </p>
+</div>
+</div>
+</div>
+<!-- INLINE CLIENT LOGIC SCRIPT -->
+<script>
+    let currentPolicy = 'RR';
+    let currentQuantum = 5.0;
+    let isRunning = false;
+    let simTimer = null;
+    let clockMs = 14.2;
+
+    function selectPolicy(policy) {
+      currentPolicy = policy;
+      const fcfsBox = document.getElementById('policy-fcfs');
+      const rrBox = document.getElementById('policy-rr');
+      const fcfsMark = document.getElementById('radio-fcfs-mark').firstElementChild;
+      const rrMark = document.getElementById('radio-rr-mark').firstElementChild;
+      const quantumWrap = document.getElementById('quantum-control-wrapper');
+
+      if (policy === 'FCFS') {
+        fcfsBox.className = "cursor-pointer border-2 border-on-surface p-space-md bg-surface-container-high flex flex-col justify-between h-32 shadow-[3px_3px_0px_#1c1c17]";
+        rrBox.className = "cursor-pointer border border-on-surface p-space-md bg-surface hover:bg-surface-container transition-colors flex flex-col justify-between h-32";
+        fcfsMark.className = "w-full h-full bg-primary-container";
+        rrMark.className = "w-full h-full bg-transparent";
+        quantumWrap.classList.add('opacity-40', 'pointer-events-none');
+      } else {
+        rrBox.className = "cursor-pointer border-2 border-on-surface p-space-md bg-surface-container-high flex flex-col justify-between h-32 shadow-[3px_3px_0px_#1c1c17]";
+        fcfsBox.className = "cursor-pointer border border-on-surface p-space-md bg-surface hover:bg-surface-container transition-colors flex flex-col justify-between h-32";
+        rrMark.className = "w-full h-full bg-primary-container";
+        fcfsMark.className = "w-full h-full bg-transparent";
+        quantumWrap.classList.remove('opacity-40', 'pointer-events-none');
+      }
+    }
+
+    function adjustQuantum(delta) {
+      currentQuantum = Math.max(1.0, Math.min(20.0, currentQuantum + delta));
+      document.getElementById('quantum-value').textContent = currentQuantum.toFixed(1);
+    }
+
+    function setBurst(val, btn) {
+      document.querySelectorAll('.burst-btn').forEach(b => {
+        b.className = "burst-btn py-space-sm font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-colors border-r border-on-surface last:border-r-0";
+      });
+      btn.className = "burst-btn py-space-sm font-label-md text-label-md bg-on-surface text-surface transition-colors border-r border-on-surface last:border-r-0";
+      document.getElementById('active-burst-label').textContent = val + " ACTIVE INCOMING CONNECTIONS";
+    }
+
+    function toggleSimulation() {
+      const btn = document.getElementById('btn-start');
+      const label = document.getElementById('start-label');
+      if (!isRunning) {
+        isRunning = true;
+        label.textContent = "HALT SIMULATION";
+        btn.classList.replace('bg-primary-container', 'bg-on-surface');
+        btn.classList.replace('text-on-surface', 'text-primary-container');
+        simTimer = setInterval(() => {
+          clockMs += 0.2;
+          document.getElementById('sim-clock-display').textContent = "00:" + (clockMs < 10 ? "0" : "") + clockMs.toFixed(2) + " ms";
+          const bar = document.getElementById('quantum-progress-bar');
+          const pct = ((clockMs % currentQuantum) / currentQuantum) * 100;
+          bar.style.width = pct + "%";
+        }, 120);
+      } else {
+        isRunning = false;
+        label.textContent = "RESUME SIMULATION";
+        btn.classList.replace('bg-on-surface', 'bg-primary-container');
+        btn.classList.replace('text-primary-container', 'text-on-surface');
+        clearInterval(simTimer);
+      }
+    }
+
+    function stepForward() {
+      clockMs += 1.0;
+      document.getElementById('sim-clock-display').textContent = "00:" + (clockMs < 10 ? "0" : "") + clockMs.toFixed(2) + " ms";
+      const bar = document.getElementById('quantum-progress-bar');
+      const pct = ((clockMs % currentQuantum) / currentQuantum) * 100;
+      bar.style.width = pct + "%";
+    }
+
+    function playStep() {
+      if (!isRunning) toggleSimulation();
+    }
+
+    function resetEngine() {
+      if (isRunning) toggleSimulation();
+      clockMs = 0.0;
+      document.getElementById('sim-clock-display').textContent = "00:00.00 ms";
+      document.getElementById('quantum-progress-bar').style.width = "0%";
+      document.getElementById('start-label').textContent = "START SIMULATION";
+    }
+
+    function regenerateWorkload() {
+      const bar = document.getElementById('quantum-progress-bar');
+      bar.style.width = "10%";
+      clockMs = 0.0;
+      document.getElementById('sim-clock-display').textContent = "00:00.00 ms";
+    }
+  </script>
+</div></main><footer class="w-full bg-surface border-t border-on-surface py-space-md"><div class="w-full px-margin-md lg:px-margin-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase"><div>EXAMCORE — USN 25BTRIS028 // CPU SCHEDULING SIMULATION</div><div class="flex items-center gap-space-lg"><span class="text-on-surface">KERNEL ARCH // REV 04</span><span>LATENCY: 0.12MS</span></div></div></footer></body></html>

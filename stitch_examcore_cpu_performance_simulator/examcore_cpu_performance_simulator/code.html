@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"primary-fixed-dim":"#add450","primary-container":"#c8f169","on-primary-fixed-variant":"#394d00","on-primary":"#ffffff","inverse-on-surface":"#f4f1e9","secondary-fixed":"#e5e2e1","on-tertiary-fixed-variant":"#464741","surface":"#fcf9f1","on-secondary-fixed":"#1c1b1b","surface-bright":"#fcf9f1","primary-fixed":"#c8f169","surface-container-low":"#f6f3eb","tertiary-container":"#e4e3da","tertiary-fixed-dim":"#c7c7be","on-primary-fixed":"#151f00","on-secondary-container":"#636262","background":"#fcf9f1","tertiary-fixed":"#e4e3da","on-error":"#ffffff","on-tertiary":"#ffffff","surface-container":"#f1eee6","outline":"#757966","surface-variant":"#e5e2da","on-secondary-fixed-variant":"#474646","secondary-fixed-dim":"#c8c6c5","surface-container-highest":"#e5e2da","surface-container-high":"#ebe8e0","outline-variant":"#c4c9b2","surface-container-lowest":"#ffffff","primary":"#4d6700","on-primary-container":"#516d00","tertiary":"#5e5f58","error":"#ba1a1a","surface-dim":"#dddad2","on-secondary":"#ffffff","on-background":"#1c1c17","on-tertiary-container":"#64655e","surface-tint":"#4d6700","on-surface-variant":"#444938","inverse-primary":"#add450","inverse-surface":"#31312b","secondary":"#5f5e5e","secondary-container":"#e2dfde","error-container":"#ffdad6","on-error-container":"#93000a","on-tertiary-fixed":"#1b1c17","on-surface":"#1c1c17"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","space-sm":"0.5rem","margin":"1rem","gutter":"1rem","margin-lg":"3rem","space-2xl":"4rem","gutter-lg":"2rem","space-xl":"2.5rem","space-xs":"0.25rem","space-md":"1rem","gutter-md":"1.5rem","margin-md":"2rem"},"fontFamily":{"headline-2xl-mobile":["Syne"],"headline-sm":["Syne"],"body-lg":["Space Mono"],"headline-xl-mobile":["Syne"],"label-lg":["Space Mono"],"body-md":["Space Mono"],"label-sm":["Space Mono"],"body-sm":["Space Mono"],"headline-lg":["Syne"],"headline-xl":["Syne"],"label-md":["Space Mono"],"headline-2xl":["Syne"],"headline-md":["Syne"]},"fontSize":{"headline-2xl-mobile":["3rem",{"lineHeight":"0.95","letterSpacing":"-0.03em","fontWeight":"800"}],"headline-sm":["1.125rem",{"lineHeight":"1.25","letterSpacing":"0em","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.5","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-xl-mobile":["2.25rem",{"lineHeight":"1.0","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["0.875rem",{"lineHeight":"1.2","letterSpacing":"0.05em","fontWeight":"700"}],"body-md":["0.875rem",{"lineHeight":"1.55","letterSpacing":"0em","fontWeight":"400"}],"label-sm":["0.625rem",{"lineHeight":"1.1","letterSpacing":"0.1em","fontWeight":"700"}],"body-sm":["0.75rem",{"lineHeight":"1.6","letterSpacing":"0.02em","fontWeight":"400"}],"headline-lg":["2.25rem",{"lineHeight":"1.05","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-xl":["3.75rem",{"lineHeight":"0.96","letterSpacing":"-0.03em","fontWeight":"700"}],"label-md":["0.75rem",{"lineHeight":"1.2","letterSpacing":"0.08em","fontWeight":"700"}],"headline-2xl":["5.5rem",{"lineHeight":"0.92","letterSpacing":"-0.04em","fontWeight":"800"}],"headline-md":["1.5rem",{"lineHeight":"1.15","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/40"><div class="h-16 w-full px-margin lg:px-margin-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface">EXAMCORE</span><span class="font-label-sm text-label-sm tracking-widest px-space-xs py-0.5 bg-surface-container text-on-surface-variant uppercase border border-outline-variant/30">25BTRIS028</span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="bg-inverse-surface text-inverse-on-surface"><a aria-current="page" class="px-space-sm py-1 font-label-md uppercase tracking-wider transition-colors bg-inverse-surface text-inverse-on-surface" data-path="overview" href="#">Overview</a><a class="px-space-sm py-1 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="simulator" href="#">Simulator</a><a class="px-space-sm py-1 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant"><span class="inline-block w-2 h-2 bg-primary-fixed"></span><span>SYS:READY</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO (Radical Editorial Minimalism) -->
+<section class="w-full px-margin md:px-margin-md lg:px-margin-lg py-space-2xl md:py-32 flex flex-col justify-between relative">
+<div class="max-w-5xl flex flex-col gap-space-lg">
+<div class="flex items-center gap-space-sm font-label-md text-label-md text-secondary uppercase tracking-widest">
+<span class="w-2.5 h-2.5 bg-primary-fixed inline-block"></span>
+<span>Computational Dispatch Architecture</span>
+<span class="text-tertiary">//</span>
+<span>01.00</span>
+</div>
+<h1 class="font-headline-2xl text-headline-2xl-mobile md:text-headline-xl lg:text-headline-2xl text-on-surface uppercase tracking-tighter max-w-4xl">
+        What happens when everyone clicks submit?
+      </h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl pt-space-sm">
+        Explore how CPU scheduling algorithms handle simultaneous online examination requests under massive synchronized burst loads.
+      </p>
+<div class="pt-space-md">
+<a class="inline-flex items-center gap-space-md px-space-xl py-space-md bg-primary-fixed text-on-primary-fixed font-label-lg text-label-lg uppercase tracking-wider transition-all duration-150 hover:bg-inverse-surface hover:text-inverse-on-surface shadow-[4px_4px_0px_#1c1c17]" href="#simulator">
+<span>Explore Simulator</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Editorial Accent Line Indicator -->
+<div class="w-full flex items-center justify-between pt-space-2xl text-tertiary font-label-sm text-label-sm tracking-widest uppercase">
+<span>Kernel Execution State</span>
+<span>Synchronous Ingest Buffer</span>
+<span class="hidden sm:inline">Quantum: 2.0ms</span>
+</div>
+</section>
+<!-- SECTION 2: SIMULATOR (Main Attraction) -->
+<section class="w-full px-margin md:px-margin-md lg:px-margin-lg py-space-xl scroll-mt-20" id="simulator">
+<!-- Section Identifier Header -->
+<div class="flex items-baseline justify-between py-space-md border-b-2 border-on-surface mb-space-xl">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block">System Instrumentation</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight">Simulator</h2>
+</div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest hidden sm:block">Engine Mode: Preemptive / FIFO</span>
+</div>
+<!-- 2-Column Spacious Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start">
+<!-- Left Column: Controls (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-xl p-space-lg md:p-space-xl bg-surface-container-lowest shadow-[3px_3px_0px_#1c1c17]">
+<!-- Control 1: Student Count -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface">Concurrent Students (Burst)</label>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold" id="studentCountLabel">50 Requests</span>
+</div>
+<div class="grid grid-cols-5 gap-space-xs pt-space-xs" id="studentSelectorGroup">
+<button class="student-pill py-space-sm font-label-md text-label-md transition-colors bg-surface-container text-on-surface hover:bg-surface-container-highest" data-val="10" type="button">10</button>
+<button class="student-pill py-space-sm font-label-md text-label-md transition-colors bg-surface-container text-on-surface hover:bg-surface-container-highest" data-val="25" type="button">25</button>
+<button class="student-pill active-pill py-space-sm font-label-md text-label-md transition-colors bg-inverse-surface text-inverse-on-surface" data-val="50" type="button">50</button>
+<button class="student-pill py-space-sm font-label-md text-label-md transition-colors bg-surface-container text-on-surface hover:bg-surface-container-highest" data-val="100" type="button">100</button>
+<button class="student-pill py-space-sm font-label-md text-label-md transition-colors bg-surface-container text-on-surface hover:bg-surface-container-highest" data-val="200" type="button">200</button>
+</div>
+</div>
+<!-- Control 2: Scheduling Algorithm -->
+<div class="flex flex-col gap-space-sm">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface">Dispatch Policy</label>
+<div class="grid grid-cols-2 gap-space-sm" id="algoSelectorGroup">
+<button class="algo-pill text-left p-space-md bg-surface-container text-on-surface hover:bg-surface-container-highest transition-colors" data-algo="fcfs" type="button">
+<span class="font-headline-sm text-headline-sm block uppercase">FCFS</span>
+<span class="font-body-sm text-body-sm text-secondary block pt-1">First-Come First-Served</span>
+</button>
+<button class="algo-pill active-algo text-left p-space-md bg-inverse-surface text-inverse-on-surface transition-colors" data-algo="rr" type="button">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm block uppercase text-primary-fixed">Round Robin</span>
+<span class="font-label-sm text-label-sm text-primary-fixed bg-surface-container/20 px-1">Q=2ms</span>
+</div>
+<span class="font-body-sm text-body-sm text-surface-container block pt-1">Time-Sliced Preemptive</span>
+</button>
+</div>
+</div>
+<!-- Simulation Metadata Summary -->
+<div class="p-space-md bg-surface-container-low flex flex-col gap-space-xs font-body-sm text-body-sm text-secondary">
+<div class="flex justify-between">
+<span>Workload Composition:</span>
+<span class="text-on-surface font-label-md text-label-md uppercase">Calculated Response Payload</span>
+</div>
+<div class="flex justify-between">
+<span>Mean Service Request:</span>
+<span class="text-on-surface font-label-md text-label-md uppercase" id="meanServiceLabel">4.8 MS</span>
+</div>
+<div class="flex justify-between">
+<span>Lock Contention:</span>
+<span class="text-on-surface font-label-md text-label-md uppercase">Zero Pre-Fetch</span>
+</div>
+</div>
+<!-- Trigger Button -->
+<button class="w-full py-space-md bg-inverse-surface hover:bg-primary-fixed text-inverse-on-surface hover:text-on-primary-fixed font-headline-sm text-headline-sm uppercase tracking-wider transition-all duration-150 flex items-center justify-center gap-space-sm shadow-[3px_3px_0px_#1c1c17]" id="startSimBtn" type="button">
+<span class="material-symbols-outlined text-[22px]">play_arrow</span>
+<span id="startBtnText">Start Simulation</span>
+</button>
+</div>
+<!-- Right Column: CPU Visualisation (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md bg-surface-container-lowest p-space-lg md:p-space-xl shadow-[3px_3px_0px_#1c1c17]">
+<!-- Telemetry Header -->
+<div class="flex items-center justify-between pb-space-md border-b border-surface-container-highest">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface">Core 0 Execution Bay</span>
+<span class="font-label-sm text-label-sm text-secondary px-2 py-0.5 bg-surface-container">THREAD #1</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-md py-1 bg-surface-container text-on-surface font-label-md text-label-md tracking-wider uppercase transition-colors" id="cpuStatePill">
+<span class="w-2 h-2 rounded-full bg-secondary inline-block" id="cpuLed"></span>
+<span id="cpuStatusText">IDLE</span>
+</div>
+</div>
+<!-- Currently Executing Card -->
+<div class="p-space-lg bg-surface-container-low flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block">Active Process Context</span>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight" id="currentTaskTitle">Waiting for Trigger</h3>
+</div>
+<span class="font-label-md text-label-md bg-inverse-surface text-primary-fixed px-space-sm py-1 font-bold" id="taskBurstBadge">-- MS</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full flex flex-col gap-1">
+<div class="w-full h-3 bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-fixed transition-all duration-150 w-0" id="executionProgressBar"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-secondary">
+<span id="progressPercent">0%</span>
+<span id="progressCycles">0 / 0 MS</span>
+</div>
+</div>
+</div>
+<!-- Ready Queue Component -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Ready Queue (FIFO Buffer)</span>
+<span class="font-label-sm text-label-sm text-on-surface" id="queueCountBadge">0 Tasks Queued</span>
+</div>
+<div class="flex items-center gap-space-xs overflow-x-auto py-space-sm min-h-[58px]" id="readyQueueContainer">
+<span class="text-tertiary font-body-sm text-body-sm italic">Queue buffer empty. Launch simulation.</span>
+</div>
+</div>
+<!-- Completed Tasks Counter & Visual Pills -->
+<div class="flex flex-col gap-space-xs pt-space-sm border-t border-surface-container-highest">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Retirement &amp; Commit Unit</span>
+<span class="font-label-md text-label-md text-primary font-bold" id="completedCounter">0 / 0 Completed</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs min-h-[38px] pt-space-xs" id="completedPillsContainer">
+<span class="text-tertiary font-body-sm text-body-sm italic">Awaiting committed instructions...</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: TIMELINE (Visual Execution History) -->
+<section class="w-full px-margin md:px-margin-md lg:px-margin-lg py-space-xl" id="timelineSection">
+<div class="bg-surface-container-lowest p-space-lg md:p-space-xl shadow-[3px_3px_0px_#1c1c17] flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs border-b border-surface-container-highest pb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Temporal Allocation Graph</span>
+<h3 class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface">CPU Execution Timeline</h3>
+</div>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm text-secondary">
+<div class="flex items-center gap-1"><span class="w-2.5 h-2.5 bg-primary-fixed inline-block"></span> <span>Auto-Save</span></div>
+<div class="flex items-center gap-1"><span class="w-2.5 h-2.5 bg-inverse-surface inline-block"></span> <span>Final Submit</span></div>
+<div class="flex items-center gap-1"><span class="w-2.5 h-2.5 bg-secondary-fixed-dim inline-block"></span> <span>Integrity Lock</span></div>
+</div>
+</div>
+<!-- Timeline Canvas Bar -->
+<div class="w-full pt-space-xs">
+<div class="w-full h-12 bg-surface-container-low flex items-stretch overflow-hidden relative" id="timelineTrack">
+<!-- Populated dynamically via JS -->
+<div class="flex items-center justify-center w-full text-secondary font-label-md text-label-md uppercase tracking-widest">
+            Timeline synchronisation pending start...
+          </div>
+</div>
+<!-- Scale markers -->
+<div class="w-full flex justify-between font-label-sm text-label-sm text-tertiary pt-2 border-t border-surface-container-highest mt-2">
+<span>T = 0.0ms (Bursts Ingested)</span>
+<span id="timelineMidPoint">T = 12.0ms</span>
+<span id="timelineEndPoint">T = 24.0ms (Cycle Complete)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: RESULTS (Three Key Editorial Numbers + Comparison) -->
+<section class="w-full px-margin md:px-margin-md lg:px-margin-lg py-space-xl" id="resultsSection">
+<div class="flex items-baseline justify-between py-space-md border-b-2 border-on-surface mb-space-xl">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block">Telemetric Post-Processing</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight">Execution Results</h2>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-widest">Run Verified</span>
+</div>
+<!-- EXACTLY THREE Editorial Metrics -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-lg mb-space-xl">
+<!-- Metric 1: Avg Waiting Time -->
+<div class="p-space-xl bg-surface-container-lowest shadow-[3px_3px_0px_#1c1c17] flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Latency Vector</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">timer</span>
+</div>
+<div class="py-space-lg">
+<div class="font-headline-2xl text-headline-xl lg:text-headline-2xl text-on-surface tracking-tighter" id="metricWaitTime">4.2<span class="font-headline-md text-headline-md text-secondary ml-1">ms</span></div>
+<span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface block mt-2">Average Waiting Time</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary border-t border-surface-container-highest pt-space-sm">
+          Mean turnaround pause experienced per examination client in the ready queue.
+        </p>
+</div>
+<!-- Metric 2: Avg Turnaround Time -->
+<div class="p-space-xl bg-surface-container-lowest shadow-[3px_3px_0px_#1c1c17] flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Completion Span</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">avg_time</span>
+</div>
+<div class="py-space-lg">
+<div class="font-headline-2xl text-headline-xl lg:text-headline-2xl text-on-surface tracking-tighter" id="metricTurnaroundTime">14.2<span class="font-headline-md text-headline-md text-secondary ml-1">ms</span></div>
+<span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface block mt-2">Average Turnaround</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary border-t border-surface-container-highest pt-space-sm">
+          Total elapsed interval from client HTTP submission to permanent DB persistence.
+        </p>
+</div>
+<!-- Metric 3: CPU Utilisation -->
+<div class="p-space-xl bg-surface-container-lowest shadow-[3px_3px_0px_#1c1c17] flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Resource Saturation</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">speed</span>
+</div>
+<div class="py-space-lg">
+<div class="font-headline-2xl text-headline-xl lg:text-headline-2xl text-primary tracking-tighter" id="metricUtilisation">94.8<span class="font-headline-md text-headline-md text-secondary ml-1">%</span></div>
+<span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface block mt-2">CPU Utilisation</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary border-t border-surface-container-highest pt-space-sm">
+          Active microcode computation cycle fraction devoid of idle wait-states.
+        </p>
+</div>
+</div>
+<!-- Clean Expandable Comparison Panel: FCFS vs Round Robin -->
+<div class="bg-surface-container-lowest shadow-[3px_3px_0px_#1c1c17] overflow-hidden">
+<button class="w-full p-space-lg flex items-center justify-between hover:bg-surface-container-low transition-colors text-left" id="toggleComparisonBtn" type="button">
+<div class="flex items-center gap-space-md">
+<span class="w-3 h-3 bg-primary-fixed inline-block"></span>
+<span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface">Compare FCFS vs Round Robin</span>
+</div>
+<div class="flex items-center gap-space-sm font-label-md text-label-md text-secondary uppercase">
+<span id="accordionIndicatorText">Inspect Analytical Delta</span>
+<span class="material-symbols-outlined transition-transform duration-200" id="accordionIcon">expand_more</span>
+</div>
+</button>
+<div class="hidden border-t border-surface-container-highest p-space-lg md:p-space-xl" id="comparisonAccordionBody">
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-md text-body-md">
+<thead>
+<tr class="border-b-2 border-on-surface font-label-md text-label-md uppercase tracking-wider text-secondary">
+<th class="py-space-sm">Metric Evaluation</th>
+<th class="py-space-sm">First-Come First-Served (FCFS)</th>
+<th class="py-space-sm">Round Robin (Preemptive Q=2ms)</th>
+<th class="py-space-sm">Editorial Verdict</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-highest">
+<tr>
+<td class="py-space-md font-bold text-on-surface">Convoy Vulnerability</td>
+<td class="py-space-md text-error font-body-sm">High (Submissions lock up sync queries)</td>
+<td class="py-space-md text-primary font-body-sm">Eliminated (Equitable slicing)</td>
+<td class="py-space-md text-secondary font-body-sm">RR prevents massive answer files from starving quick saves</td>
+</tr>
+<tr>
+<td class="py-space-md font-bold text-on-surface">Turnaround Variance</td>
+<td class="py-space-md text-secondary font-body-sm">Extreme (High standard deviation)</td>
+<td class="py-space-md text-on-surface font-body-sm">Predictable &amp; Smooth</td>
+<td class="py-space-md text-secondary font-body-sm">Candidates receive responsive ACKs within predictable limits</td>
+</tr>
+<tr>
+<td class="py-space-md font-bold text-on-surface">Context Switch Overhead</td>
+<td class="py-space-md text-primary font-body-sm">Zero Overhead</td>
+<td class="py-space-md text-secondary font-body-sm">Minimal (Calculated at 0.12ms)</td>
+<td class="py-space-md text-secondary font-body-sm">Marginal CPU penalty is outweighed by student UX fairness</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: ABOUT (Editorial Knowledge Architecture) -->
+<section class="w-full px-margin md:px-margin-md lg:px-margin-lg py-space-2xl bg-surface-container-low border-t border-outline-variant/30 mt-space-xl" id="about">
+<div class="max-w-4xl flex flex-col gap-space-lg">
+<div class="flex items-center gap-space-sm font-label-md text-label-md uppercase tracking-widest text-primary">
+<span>02.00</span>
+<span class="text-tertiary">//</span>
+<span>Systems Context</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-tight text-on-surface">
+        EXAMCORE // CPU Performance Simulator
+      </h2>
+<p class="font-body-lg text-body-lg text-secondary leading-relaxed">
+        High-stakes online examinations generate severe synchronous burst workloads when the test timer lapses, triggering hundreds of simultaneous multi-megabyte POST submissions. Without preemptive scheduling policies, non-preemptive First-Come First-Served algorithms cause catastrophic convoy effects where brief keep-alive syncs and heartbeat verification pings are blocked by heavyweight file serialization.
+      </p>
+<div class="pt-space-md flex flex-col sm:flex-row items-start sm:items-center gap-space-lg font-label-md text-label-md uppercase tracking-wider text-tertiary">
+<div class="flex items-center gap-2">
+<span class="text-on-surface font-bold">IDENTIFIER:</span>
+<span>USN 25BTRIS028</span>
+</div>
+<div class="hidden sm:block text-outline-variant">•</div>
+<div class="flex items-center gap-2">
+<span class="text-on-surface font-bold">DIVISION:</span>
+<span>Department of Computer Science &amp; Engineering</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+(function() {
+  // State
+  let currentStudentCount = 50;
+  let currentAlgo = 'rr'; // 'fcfs' or 'rr'
+  let isSimulating = false;
+  let simTimer = null;
+
+  // Process Mock Dataset Generator
+  function generateProcessList(count) {
+    const types = [
+      { name: "Auto-Save Sync", burst: 2, color: "#c8f169", text: "#151f00" },
+      { name: "Final Submit", burst: 5, color: "#1c1c17", text: "#ffffff" },
+      { name: "Heartbeat Ping", burst: 1, color: "#ebe8e0", text: "#1c1c17" },
+      { name: "Integrity Lock", burst: 3, color: "#c8c6c5", text: "#1c1b1b" }
+    ];
+
+    const tasks = [];
+    const limit = Math.min(count, 8); // Display window limit for clean UI
+    for(let i = 0; i < limit; i++) {
+      const type = types[i % types.length];
+      tasks.push({
+        id: `P${101 + i}`,
+        type: type.name,
+        totalBurst: type.burst,
+        remainingBurst: type.burst,
+        color: type.color,
+        textColor: type.text
+      });
+    }
+    return tasks;
+  }
+
+  // DOM Elements
+  const studentPills = document.querySelectorAll('.student-pill');
+  const algoPills = document.querySelectorAll('.algo-pill');
+  const startSimBtn = document.getElementById('startSimBtn');
+  const startBtnText = document.getElementById('startBtnText');
+  const studentCountLabel = document.getElementById('studentCountLabel');
+  const meanServiceLabel = document.getElementById('meanServiceLabel');
+  
+  const cpuStatePill = document.getElementById('cpuStatePill');
+  const cpuLed = document.getElementById('cpuLed');
+  const cpuStatusText = document.getElementById('cpuStatusText');
+  
+  const currentTaskTitle = document.getElementById('currentTaskTitle');
+  const taskBurstBadge = document.getElementById('taskBurstBadge');
+  const executionProgressBar = document.getElementById('executionProgressBar');
+  const progressPercent = document.getElementById('progressPercent');
+  const progressCycles = document.getElementById('progressCycles');
+  
+  const readyQueueContainer = document.getElementById('readyQueueContainer');
+  const queueCountBadge = document.getElementById('queueCountBadge');
+  const completedCounter = document.getElementById('completedCounter');
+  const completedPillsContainer = document.getElementById('completedPillsContainer');
+  const timelineTrack = document.getElementById('timelineTrack');
+
+  const metricWaitTime = document.getElementById('metricWaitTime');
+  const metricTurnaroundTime = document.getElementById('metricTurnaroundTime');
+  const metricUtilisation = document.getElementById('metricUtilisation');
+
+  const toggleComparisonBtn = document.getElementById('toggleComparisonBtn');
+  const comparisonAccordionBody = document.getElementById('comparisonAccordionBody');
+  const accordionIcon = document.getElementById('accordionIcon');
+
+  // Pill Selection Logic
+  studentPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      if (isSimulating) return;
+      studentPills.forEach(p => {
+        p.classList.remove('bg-inverse-surface', 'text-inverse-on-surface');
+        p.classList.add('bg-surface-container', 'text-on-surface');
+      });
+      pill.classList.remove('bg-surface-container', 'text-on-surface');
+      pill.classList.add('bg-inverse-surface', 'text-inverse-on-surface');
+      currentStudentCount = parseInt(pill.getAttribute('data-val'));
+      studentCountLabel.innerText = `${currentStudentCount} Requests`;
+      meanServiceLabel.innerText = `${(3.2 + (currentStudentCount * 0.02)).toFixed(1)} MS`;
+      updateExpectedMetrics();
+    });
+  });
+
+  algoPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      if (isSimulating) return;
+      algoPills.forEach(p => {
+        p.classList.remove('bg-inverse-surface', 'text-inverse-on-surface');
+        p.classList.add('bg-surface-container', 'text-on-surface');
+      });
+      pill.classList.remove('bg-surface-container', 'text-on-surface');
+      pill.classList.add('bg-inverse-surface', 'text-inverse-on-surface');
+      currentAlgo = pill.getAttribute('data-algo');
+      updateExpectedMetrics();
+    });
+  });
+
+  function updateExpectedMetrics() {
+    if (currentAlgo === 'fcfs') {
+      const wait = (8.4 + (currentStudentCount * 0.12)).toFixed(1);
+      const ta = (18.1 + (currentStudentCount * 0.16)).toFixed(1);
+      metricWaitTime.innerHTML = `${wait}<span class="font-headline-md text-headline-md text-secondary ml-1">ms</span>`;
+      metricTurnaroundTime.innerHTML = `${ta}<span class="font-headline-md text-headline-md text-secondary ml-1">ms</span>`;
+      metricUtilisation.innerHTML = `88.4<span class="font-headline-md text-headline-md text-secondary ml-1">%</span>`;
+    } else {
+      const wait = (3.1 + (currentStudentCount * 0.03)).toFixed(1);
+      const ta = (12.4 + (currentStudentCount * 0.05)).toFixed(1);
+      metricWaitTime.innerHTML = `${wait}<span class="font-headline-md text-headline-md text-secondary ml-1">ms</span>`;
+      metricTurnaroundTime.innerHTML = `${ta}<span class="font-headline-md text-headline-md text-secondary ml-1">ms</span>`;
+      metricUtilisation.innerHTML = `96.2<span class="font-headline-md text-headline-md text-secondary ml-1">%</span>`;
+    }
+  }
+
+  // Accordion Toggle
+  toggleComparisonBtn.addEventListener('click', () => {
+    const isHidden = comparisonAccordionBody.classList.contains('hidden');
+    if (isHidden) {
+      comparisonAccordionBody.classList.remove('hidden');
+      accordionIcon.innerText = 'expand_less';
+    } else {
+      comparisonAccordionBody.classList.add('hidden');
+      accordionIcon.innerText = 'expand_more';
+    }
+  });
+
+  // Render Ready Queue UI
+  function renderReadyQueue(queue) {
+    queueCountBadge.innerText = `${queue.length} Tasks Queued`;
+    if (queue.length === 0) {
+      readyQueueContainer.innerHTML = `<span class="text-tertiary font-body-sm text-body-sm italic">Queue buffer exhausted. Complete.</span>`;
+      return;
+    }
+    readyQueueContainer.innerHTML = '';
+    queue.forEach(task => {
+      const pill = document.createElement('div');
+      pill.className = "flex items-center gap-1.5 px-space-sm py-1 bg-surface-container font-label-md text-label-md text-on-surface border border-outline-variant/40 shrink-0";
+      pill.innerHTML = `
+        <span class="w-2 h-2 inline-block" style="background-color: ${task.color}"></span>
+        <span>${task.id}</span>
+        <span class="text-secondary font-normal">${task.remainingBurst}ms</span>
+      `;
+      readyQueueContainer.appendChild(pill);
+    });
+  }
+
+  // Run Realtime Simulation
+  startSimBtn.addEventListener('click', () => {
+    if (isSimulating) return;
+
+    isSimulating = true;
+    startSimBtn.disabled = true;
+    startSimBtn.classList.add('opacity-50', 'cursor-not-allowed');
+    startBtnText.innerText = "SIMULATING BURST...";
+    
+    // CPU Status to Processing
+    cpuStatePill.classList.remove('bg-surface-container', 'text-on-surface');
+    cpuStatePill.classList.add('bg-primary-fixed', 'text-on-primary-fixed');
+    cpuLed.classList.remove('bg-secondary');
+    cpuLed.classList.add('bg-on-primary-fixed');
+    cpuStatusText.innerText = "PROCESSING";
+
+    // Setup Process Lists
+    const taskQueue = generateProcessList(currentStudentCount);
+    const totalTasks = taskQueue.length;
+    let completedCount = 0;
+    completedPillsContainer.innerHTML = '';
+    timelineTrack.innerHTML = '';
+    completedCounter.innerText = `0 / ${totalTasks} Completed`;
+
+    renderReadyQueue(taskQueue);
+
+    function step() {
+      if (taskQueue.length === 0) {
+        // Finished
+        isSimulating = false;
+        startSimBtn.disabled = false;
+        startSimBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+        startBtnText.innerText = "RE-RUN SIMULATION";
+
+        cpuStatePill.classList.add('bg-surface-container', 'text-on-surface');
+        cpuStatePill.classList.remove('bg-primary-fixed', 'text-on-primary-fixed');
+        cpuLed.classList.add('bg-secondary');
+        cpuLed.classList.remove('bg-on-primary-fixed');
+        cpuStatusText.innerText = "IDLE";
+
+        currentTaskTitle.innerText = "Batch Executed";
+        taskBurstBadge.innerText = "0 MS";
+        executionProgressBar.style.width = "100%";
+        progressPercent.innerText = "100%";
+        progressCycles.innerText = "All Cycles Dispatched";
+
+        // Scroll gracefully to Results
+        document.getElementById('resultsSection').scrollIntoView({ behavior: 'smooth' });
+        return;
+      }
+
+      // Pop task from queue
+      const task = taskQueue.shift();
+      renderReadyQueue(taskQueue);
+
+      currentTaskTitle.innerText = `${task.id} (${task.type})`;
+      taskBurstBadge.innerText = `${task.remainingBurst} MS`;
+
+      // Slice determination based on policy
+      let slice = task.remainingBurst;
+      let requeue = false;
+      if (currentAlgo === 'rr') {
+        const quantum = 2;
+        if (task.remainingBurst > quantum) {
+          slice = quantum;
+          task.remainingBurst -= quantum;
+          requeue = true;
+        } else {
+          slice = task.remainingBurst;
+          task.remainingBurst = 0;
+        }
+      } else {
+        task.remainingBurst = 0;
+      }
+
+      // Animate progress on active card
+      executionProgressBar.style.width = "10%";
+      progressPercent.innerText = "Executing...";
+      progressCycles.innerText = `Quantum: ${slice}ms`;
+
+      setTimeout(() => {
+        executionProgressBar.style.width = "100%";
+
+        // Add to Timeline track
+        const block = document.createElement('div');
+        block.className = "h-full flex items-center justify-center font-label-sm text-label-sm border-r border-surface/30 transition-all";
+        block.style.flex = `${slice} 0 auto`;
+        block.style.backgroundColor = task.color;
+        block.style.color = task.textColor;
+        block.innerHTML = `<span class="px-1 truncate">${task.id}</span>`;
+        timelineTrack.appendChild(block);
+
+        setTimeout(() => {
+          if (requeue) {
+            taskQueue.push(task);
+            renderReadyQueue(taskQueue);
+          } else {
+            completedCount++;
+            completedCounter.innerText = `${completedCount} / ${totalTasks} Completed`;
+            const doneTag = document.createElement('div');
+            doneTag.className = "flex items-center gap-1 px-2 py-0.5 bg-surface-container font-label-sm text-label-sm text-on-surface";
+            doneTag.innerHTML = `<span class="material-symbols-outlined text-[14px] text-primary">check</span><span>${task.id}</span>`;
+            completedPillsContainer.appendChild(doneTag);
+          }
+          step();
+        }, 320);
+
+      }, 240);
+    }
+
+    step();
+  });
+
+  // Initialize display
+  updateExpectedMetrics();
+})();
+</script></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/40"><div class="w-full px-margin lg:px-margin-lg py-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant"><div>EXAMCORE — USN 25BTRIS028 // CPU SCHEDULING SIMULATION</div><div class="flex items-center gap-space-lg text-tertiary"><span>KERNEL ARCH // REV 04</span><span>LATENCY: 0.12MS</span></div></div></footer></body></html>

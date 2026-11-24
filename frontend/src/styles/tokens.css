@@ -1,0 +1,62 @@
+/* EXAMCORE — SYSTEM 028 Design Tokens (from DESIGN.md) */
+:root {
+  /* Surface & Substrate */
+  --surface: #fcf9f1;
+  --surface-dim: #dddad2;
+  --surface-bright: #fcf9f1;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f6f3eb;
+  --surface-container: #f1eee6;
+  --surface-container-high: #ebe8e0;
+  --surface-container-highest: #e5e2da;
+
+  /* Ink & Borders */
+  --on-surface: #1c1c17;
+  --on-surface-variant: #444938;
+  --inverse-surface: #31312b;
+  --inverse-on-surface: #f4f1e9;
+  --outline: #757966;
+  --outline-variant: #c4c9b2;
+  --secondary: #5f5e5e;
+  --secondary-fixed: #e5e2e1;
+  --secondary-fixed-dim: #c8c6c5;
+  --tertiary: #5e5f58;
+
+  /* Acid Lime Accent */
+  --primary: #4d6700;
+  --primary-container: #c8f169;
+  --primary-fixed: #c8f169;
+  --primary-fixed-dim: #add450;
+  --on-primary: #ffffff;
+  --on-primary-fixed: #151f00;
+  --on-primary-container: #516d00;
+
+  /* Status */
+  --error: #ba1a1a;
+  --error-alert: #e54d2e;
+  --error-container: #ffdad6;
+  --nominal: #2b8a3e;
+
+  /* Fonts */
+  --font-display: 'Syne', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --margin: 1rem;
+  --margin-md: 2rem;
+  --margin-lg: 3rem;
+  --gutter: 1rem;
+  --gutter-md: 1.5rem;
+  --gutter-lg: 2rem;
+
+  /* Brutalist Offset Shadows */
+  --shadow-offset-sm: 3px 3px 0px #1c1c17;
+  --shadow-offset-md: 4px 4px 0px #1c1c17;
+}
+

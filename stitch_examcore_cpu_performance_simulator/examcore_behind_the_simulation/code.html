@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;family=Syne:wght@400..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"error":"#ba1a1a","surface-container-highest":"#e5e2da","on-secondary":"#ffffff","on-secondary-fixed-variant":"#474646","tertiary":"#5e5f58","surface-bright":"#fcf9f1","surface-variant":"#e5e2da","surface":"#fcf9f1","on-tertiary-container":"#64655e","background":"#fcf9f1","on-surface":"#1c1c17","tertiary-fixed":"#e4e3da","inverse-primary":"#add450","surface-dim":"#dddad2","on-tertiary-fixed-variant":"#464741","on-primary":"#ffffff","inverse-on-surface":"#f4f1e9","on-secondary-container":"#636262","outline-variant":"#c4c9b2","outline":"#757966","on-error-container":"#93000a","on-background":"#1c1c17","surface-tint":"#4d6700","surface-container":"#f1eee6","on-tertiary":"#ffffff","on-primary-fixed":"#151f00","surface-container-high":"#ebe8e0","secondary-fixed-dim":"#c8c6c5","on-error":"#ffffff","inverse-surface":"#31312b","on-surface-variant":"#444938","primary-fixed":"#c8f169","secondary-container":"#e2dfde","on-primary-fixed-variant":"#394d00","tertiary-fixed-dim":"#c7c7be","primary-fixed-dim":"#add450","secondary":"#5f5e5e","on-tertiary-fixed":"#1b1c17","primary":"#4d6700","error-container":"#ffdad6","secondary-fixed":"#e5e2e1","surface-container-lowest":"#ffffff","surface-container-low":"#f6f3eb","on-primary-container":"#516d00","primary-container":"#c8f169","on-secondary-fixed":"#1c1b1b","tertiary-container":"#e4e3da"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","gutter-lg":"2rem","space-2xl":"4rem","margin":"1rem","gutter-md":"1.5rem","margin-lg":"3rem","space-xl":"2.5rem","margin-md":"2rem","gutter":"1rem","space-md":"1rem","space-xs":"0.25rem","space-sm":"0.5rem"},"fontFamily":{"label-md":["Space Mono"],"body-sm":["Space Mono"],"headline-lg":["Syne"],"body-md":["Space Mono"],"headline-sm":["Syne"],"headline-2xl-mobile":["Syne"],"headline-2xl":["Syne"],"body-lg":["Space Mono"],"label-sm":["Space Mono"],"headline-xl-mobile":["Syne"],"headline-md":["Syne"],"label-lg":["Space Mono"],"headline-xl":["Syne"]},"fontSize":{"label-md":["0.75rem",{"lineHeight":"1.2","letterSpacing":"0.08em","fontWeight":"700"}],"body-sm":["0.75rem",{"lineHeight":"1.6","letterSpacing":"0.02em","fontWeight":"400"}],"headline-lg":["2.25rem",{"lineHeight":"1.05","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["0.875rem",{"lineHeight":"1.55","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["1.125rem",{"lineHeight":"1.25","letterSpacing":"0em","fontWeight":"600"}],"headline-2xl-mobile":["3rem",{"lineHeight":"0.95","letterSpacing":"-0.03em","fontWeight":"800"}],"headline-2xl":["5.5rem",{"lineHeight":"0.92","letterSpacing":"-0.04em","fontWeight":"800"}],"body-lg":["1rem",{"lineHeight":"1.5","letterSpacing":"-0.01em","fontWeight":"400"}],"label-sm":["0.625rem",{"lineHeight":"1.1","letterSpacing":"0.1em","fontWeight":"700"}],"headline-xl-mobile":["2.25rem",{"lineHeight":"1.0","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["1.5rem",{"lineHeight":"1.15","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["0.875rem",{"lineHeight":"1.2","letterSpacing":"0.05em","fontWeight":"700"}],"headline-xl":["3.75rem",{"lineHeight":"0.96","letterSpacing":"-0.03em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface border-b border-on-surface"><div class="h-16 w-full px-margin-md lg:px-margin-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface">EXAMCORE</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 bg-surface-container-high border border-on-surface text-on-surface">25BTRIS028</span></div><nav class="hidden md:flex items-center h-full border-x border-on-surface" data-active-classes="bg-on-surface text-surface"><a class="h-full px-space-lg flex items-center font-label-md text-label-md uppercase text-on-surface-variant hover:bg-on-surface hover:text-surface transition-colors border-r border-on-surface last:border-r-0" data-path="overview" href="#">Overview</a><a class="h-full px-space-lg flex items-center font-label-md text-label-md uppercase text-on-surface-variant hover:bg-on-surface hover:text-surface transition-colors border-r border-on-surface last:border-r-0" data-path="simulator" href="#">Simulator</a><a class="h-full px-space-lg flex items-center font-label-md text-label-md uppercase text-on-surface-variant hover:bg-on-surface hover:text-surface transition-colors border-r border-on-surface last:border-r-0" data-path="results" href="#">Results</a><a aria-current="page" class="h-full px-space-lg flex items-center font-label-md uppercase transition-colors bg-on-surface text-surface" data-path="about" href="#">About</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container border border-on-surface"><span class="w-2 h-2 bg-primary-container inline-block"></span><span class="font-label-sm text-label-sm uppercase text-on-surface">SYS: READY</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 flex-1 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Dossier Meta Ribbon -->
+<section class="w-full bg-surface-container-high px-margin-md lg:px-margin-lg py-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<span class="inline-flex items-center gap-space-xs font-label-sm text-label-sm uppercase text-on-surface">
+<span class="w-1.5 h-1.5 bg-primary-container"></span>
+        STATUS: ARCHIVAL SPECIFICATION
+      </span>
+<span class="font-label-sm text-label-sm text-outline uppercase">/</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">LOC: SYS_DOCS_ABOUT.ISO</span>
+</div>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface uppercase">
+<span>REF_CODE: 25BTRIS028</span>
+<span class="text-outline">/</span>
+<span class="text-primary font-bold">LATENCY INDEX: OPTIMAL</span>
+</div>
+</section>
+<!-- Editorial Masthead Section -->
+<section class="w-full px-margin-md lg:px-margin-lg pt-space-xl pb-space-2xl bg-surface relative overflow-hidden">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-xl">
+<div class="max-w-4xl">
+<div class="inline-block px-space-xs py-0.5 bg-primary-container text-on-primary-fixed font-label-sm text-label-sm uppercase mb-space-md">
+          03.00 // ACADEMIC DISSERTATION &amp; DISPATCH ARCHITECTURE
+        </div>
+<h1 class="font-headline-2xl text-headline-2xl uppercase tracking-tighter text-on-surface leading-none mb-space-lg">
+          BEHIND THE<br/>
+<span class="text-primary italic">SIMULATION</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface max-w-2xl leading-relaxed">
+          This project explores how CPU scheduling algorithms manage concurrent requests in an online examination environment, exposing kernel bottlenecks under extreme synchronous submission spikes.
+        </p>
+</div>
+<!-- Architectural Telemetry Badge -->
+<div class="lg:w-80 p-space-md bg-surface-container flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-highest px-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-on-surface">EXPERIMENT DESIGNATION</span>
+<span class="material-symbols-outlined text-[16px] text-primary">terminal</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold leading-none">
+          M/G/1
+        </div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+          Poisson batch arrivals with deterministic service quantum calibration. Targeted examinee cluster: N=600 concurrent.
+        </div>
+<div class="pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface">
+<span>BURST PROBABILITY</span>
+<span class="text-primary font-bold">98.4%</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Break: Schematics & Telemetric Strip -->
+<section class="w-full bg-surface-container px-margin-md lg:px-margin-lg py-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Asymmetric Architectural Visual Card -->
+<div class="lg:col-span-5 bg-surface p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">TELEMETRY LAB // BATCH ARCHIVE</span>
+<span class="font-label-sm text-label-sm px-space-xs bg-primary-container text-on-primary-fixed">CORE 00</span>
+</div>
+<div class="w-full h-56 bg-surface-container-high overflow-hidden relative">
+<img class="w-full h-full object-cover filter grayscale contrast-125 hover:grayscale-0 transition duration-500" data-alt="Monochrome Swiss style photographic documentation of a vintage supercomputer mainframe processor bank, harsh overhead tungsten and clinical LED illumination, industrial metal server chassis, tactile cabling, extreme contrast brutalist photography in shades of charcoal, warm beige, and lime green indicators." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWmfri5pxz36LjNQaMVpJWU98YZfTHcT9VCpF2io5rAOAhsdUm3U21V0_yKQn-WjwrctR5GBggZb6mre4JFNMjHPCamndPj-jxUPxDkcETlWP4__49z7nX5Ltw0R1gqANQ6bGOHFq2c3WJ06ym52sARy8nK-X5jsunQAKb8DkB75578lYhsJBYFrYALiZPNro0FPzuGHEVgBl1Y8XAXUa0A6LucIWV9oeVjGPPURj2"/>
+<div class="absolute bottom-2 right-2 px-space-xs py-0.5 bg-surface text-on-surface font-label-sm text-label-sm uppercase">
+            FIG 03.1: DISPATCH BUS
+          </div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>BUS ARBITRATION: DIRECT INTERRUPT</span>
+<span>CYCLE: 5.0ms QUANTUM</span>
+</div>
+</div>
+<!-- Vector Telemetry: Simulated Queue Dynamics Sparkline -->
+<div class="lg:col-span-7 bg-surface p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase text-outline">SYNCHRONOUS SUBMISSION CONVOY SPIKE // QUEUE DEPTH MODEL</span>
+<span class="font-label-sm text-label-sm text-error uppercase font-bold">BURST SATURATION</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm uppercase text-on-surface mb-space-md">
+            BURST DYNAMICS: FCFS CONVOY VS PREEMPTIVE ROUND ROBIN
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md max-w-xl">
+            Comparison of aggregate pipeline wait queues under 500 examinee deadline events. Red trace indicates exponential pipeline backlog in naive FIFO models; primary lime shows bounded RR latency.
+          </p>
+</div>
+<!-- Inline SVG Comparative Telemetry Graph -->
+<div class="w-full h-36 bg-surface-container-low p-space-sm relative">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 600 120">
+<!-- Grid lines -->
+<line stroke="#c4c9b2" stroke-dasharray="2 4" stroke-width="0.75" x1="0" x2="600" y1="30" y2="30"></line>
+<line stroke="#c4c9b2" stroke-dasharray="2 4" stroke-width="0.75" x1="0" x2="600" y1="60" y2="60"></line>
+<line stroke="#c4c9b2" stroke-dasharray="2 4" stroke-width="0.75" x1="0" x2="600" y1="90" y2="90"></line>
+<!-- FCFS Pipeline Explosion (Error Line) -->
+<path d="M 0,110 L 80,105 L 160,98 L 240,82 L 320,55 L 400,20 L 480,8 L 560,4 L 600,2" fill="none" stroke="#ba1a1a" stroke-width="2.5"></path>
+<!-- Round Robin Bounded Response (Primary Lime Line) -->
+<path d="M 0,110 L 80,95 L 160,78 L 240,65 L 320,62 L 400,58 L 480,54 L 560,52 L 600,50" fill="none" stroke="#4d6700" stroke-width="3"></path>
+<!-- Points on RR line -->
+<circle cx="240" cy="65" fill="#c8f169" r="4" stroke="#1c1c17" stroke-width="1.5"></circle>
+<circle cx="480" cy="54" fill="#c8f169" r="4" stroke="#1c1c17" stroke-width="1.5"></circle>
+</svg>
+<!-- Annotations inside graph -->
+<div class="absolute top-2 left-3 flex gap-space-md font-label-sm text-label-sm uppercase">
+<span class="flex items-center gap-1 text-error"><span class="w-2 h-0.5 bg-error"></span> FCFS PIPELINE BACKLOG</span>
+<span class="flex items-center gap-1 text-primary"><span class="w-2 h-0.5 bg-primary"></span> RR BOUNDED QUANTUM</span>
+</div>
+</div>
+<div class="mt-space-sm flex flex-wrap items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>T=0s (DEADLINE TRIGGER)</span>
+<span>T=+10s (PEAK CRYPTO HASHING)</span>
+<span>T=+30s (STEADY EQUILIBRIUM)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Numbered Editorial In-Depth Sections -->
+<section class="w-full px-margin-md lg:px-margin-lg py-space-2xl bg-surface">
+<div class="space-y-space-2xl">
+<!-- 01 // THE PROBLEM -->
+<article class="p-space-lg lg:p-space-xl bg-surface-container-low shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-3">
+<span class="font-headline-sm text-headline-sm uppercase text-primary font-bold block mb-space-xs">
+              01 // INVESTIGATION
+            </span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline block">
+              DIAGNOSTIC CASE STUDY
+            </span>
+</div>
+<div class="lg:col-span-9 space-y-space-md">
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-tight text-on-surface">
+              The Synchronous Exam Submission Convoy
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              During an online examination, hundreds of students load questions, save answers, and submit responses simultaneously when the examination timer lapses. In traditional First-Come First-Served architectures, large payload submissions (such as cryptographic answer hashing) monopolize CPU cores, causing catastrophic convoy blocking where lightweight auto-saves and heartbeat pings experience severe timeout freezes.
+            </p>
+<!-- Technical Detail Box -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-sm">
+<div class="p-space-md bg-surface shadow-sm">
+<span class="font-label-sm text-label-sm uppercase text-outline block mb-1">CONCURRENCY SPIKE</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">12.4x</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Instantaneous request velocity escalation at T=00:00:00.</p>
+</div>
+<div class="p-space-md bg-surface shadow-sm">
+<span class="font-label-sm text-label-sm uppercase text-outline block mb-1">CONVOY DELAY</span>
+<span class="font-headline-sm text-headline-sm text-error font-bold">+18.6s</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Average wait penalty incurred by sub-10ms ping packets.</p>
+</div>
+<div class="p-space-md bg-surface shadow-sm">
+<span class="font-label-sm text-label-sm uppercase text-outline block mb-1">CORNERSTONE FAILURE</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">FIFO FAULT</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Zero preemption permits single tasks to block pipeline bus.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- 02 // THE APPROACH -->
+<article class="p-space-lg lg:p-space-xl bg-surface-container shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-3">
+<span class="font-headline-sm text-headline-sm uppercase text-primary font-bold block mb-space-xs">
+              02 // METHODOLOGY
+            </span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline block">
+              EMPIRICAL DISPATCH
+            </span>
+</div>
+<div class="lg:col-span-9 space-y-space-md">
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-tight text-on-surface">
+              Empirical Algorithm Simulation
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              We simulate this synchronous exam burst workload and compare two foundational CPU scheduling algorithms:
+            </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg pt-space-xs">
+<!-- FCFS Card -->
+<div class="p-space-lg bg-surface shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase px-space-xs bg-surface-container-high text-on-surface">BASELINE NON-PREEMPTIVE</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">ALGO_01</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface mb-space-xs">
+                    FIRST-COME, FIRST-SERVED (FCFS)
+                  </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mt-space-sm">
+                    Non-preemptive baseline. Minimal context-switching overhead, but vulnerable to convoy bottlenecks when large submissions exhaust execution cycles.
+                  </p>
+</div>
+<div class="mt-space-lg pt-space-sm bg-surface-container-low px-space-sm py-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-outline">SWITCH OVERHEAD: ZERO // FAIRNESS: DEFICIENT</span>
+</div>
+</div>
+<!-- Round Robin Card -->
+<div class="p-space-lg bg-surface shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase px-space-xs bg-primary-container text-on-primary-fixed">ACTIVE PREEMPTION</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">ALGO_02</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface mb-space-xs">
+                    ROUND ROBIN (RR)
+                  </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mt-space-sm">
+                    Preemptive time-slicing with calibrated quantum (default 5.0ms). Guarantees bounded latency and fair resource distribution across all concurrent examinee sessions.
+                  </p>
+</div>
+<div class="mt-space-lg pt-space-sm bg-surface-container-low px-space-sm py-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-outline">DEFAULT QUANTUM: 5.0ms // STARVATION: IMMUNE</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- 03 // THE OBJECTIVE -->
+<article class="p-space-lg lg:p-space-xl bg-surface-container-low shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-3">
+<span class="font-headline-sm text-headline-sm uppercase text-primary font-bold block mb-space-xs">
+              03 // GOALS
+            </span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline block">
+              METRIC PARITY
+            </span>
+</div>
+<div class="lg:col-span-9 space-y-space-md">
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-tight text-on-surface">
+              Quantifying Scheduling Trade-offs
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              Understand how scheduling decisions affect waiting time, turnaround time, response time, and CPU utilisation under real-world burst saturation, proving the necessity of preemptive time quantum tuning in mission-critical testing infrastructure.
+            </p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm pt-space-sm">
+<div class="p-space-sm bg-surface">
+<span class="font-label-sm text-label-sm uppercase text-outline">PRIMARY TARGET</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">WAIT TIME</div>
+<span class="font-label-sm text-label-sm text-primary">MINIMIZED</span>
+</div>
+<div class="p-space-sm bg-surface">
+<span class="font-label-sm text-label-sm uppercase text-outline">PRIMARY TARGET</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">TURNAROUND</div>
+<span class="font-label-sm text-label-sm text-primary">BOUNDED</span>
+</div>
+<div class="p-space-sm bg-surface">
+<span class="font-label-sm text-label-sm uppercase text-outline">PRIMARY TARGET</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">RESPONSE</div>
+<span class="font-label-sm text-label-sm text-primary">&lt; 15.0ms</span>
+</div>
+<div class="p-space-sm bg-surface">
+<span class="font-label-sm text-label-sm uppercase text-outline">PRIMARY TARGET</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">CPU UTIL</div>
+<span class="font-label-sm text-label-sm text-primary">&gt; 94.2%</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Project & Academic Details Matrix -->
+<section class="w-full px-margin-md lg:px-margin-lg py-space-xl bg-surface-container">
+<div class="mb-space-md flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface font-bold">
+        DISSERTATION REGISTRY &amp; METADATA COMPILATION
+      </span>
+<span class="font-label-sm text-label-sm uppercase text-outline">SYS: ARCHIVE_NODE</span>
+</div>
+<!-- Editorial Swiss Metadata Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-sm">
+<!-- Meta Card 1 -->
+<div class="p-space-md bg-surface flex flex-col justify-between h-36">
+<span class="font-label-sm text-label-sm uppercase text-outline">INVESTIGATION PROJECT</span>
+<div>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface block font-bold leading-tight">
+            CPU Performance Evaluation
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">
+            Online Examination Systems
+          </span>
+</div>
+</div>
+<!-- Meta Card 2 -->
+<div class="p-space-md bg-surface flex flex-col justify-between h-36">
+<span class="font-label-sm text-label-sm uppercase text-outline">SUBJECT / MODULE</span>
+<div>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface block font-bold leading-tight">
+            Computer Organization
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">
+            &amp; Architecture (COA_SYS_8)
+          </span>
+</div>
+</div>
+<!-- Meta Card 3 -->
+<div class="p-space-md bg-surface flex flex-col justify-between h-36">
+<span class="font-label-sm text-label-sm uppercase text-outline">ACADEMIC USN IDENTITY</span>
+<div>
+<span class="font-headline-sm text-headline-sm uppercase text-primary block font-bold leading-tight">
+            25BTRIS028
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">
+            Student Dissertation Roll No.
+          </span>
+</div>
+</div>
+<!-- Meta Card 4 -->
+<div class="p-space-md bg-surface flex flex-col justify-between h-36">
+<span class="font-label-sm text-label-sm uppercase text-outline">DEPARTMENT FACULTY</span>
+<div>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface block font-bold leading-tight">
+            Dept. of Computer Science
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">
+            &amp; Engineering
+          </span>
+</div>
+</div>
+<!-- Meta Card 5 -->
+<div class="p-space-md bg-surface flex flex-col justify-between h-36">
+<span class="font-label-sm text-label-sm uppercase text-outline">PLATFORM ENGINE REVISION</span>
+<div>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface block font-bold leading-tight">
+            REV 04
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">
+            Preemptive Kernel Dispatch
+          </span>
+</div>
+</div>
+<!-- Meta Card 6 -->
+<div class="p-space-md bg-surface-container-highest flex flex-col justify-between h-36">
+<span class="font-label-sm text-label-sm uppercase text-outline">EMULATOR INTEGRITY</span>
+<div>
+<span class="font-headline-sm text-headline-sm uppercase text-primary block font-bold leading-tight">
+            VERIFIED VALID
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">
+            Check: SHA-256 KERN_SIG_OK
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Synthetic Workload Note / Disclaimer Callout -->
+<section class="w-full px-margin-md lg:px-margin-lg py-space-xl bg-surface">
+<div class="p-space-lg bg-surface-container-low shadow-sm">
+<div class="flex items-start gap-space-md">
+<div class="p-1 bg-primary-container text-on-primary-fixed mt-0.5">
+<span class="material-symbols-outlined text-[20px] block">info</span>
+</div>
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface block">
+            METHODOLOGY NOTE &amp; EXPERIMENTAL SCOPE
+          </span>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed max-w-4xl">
+            This simulation employs a calibrated synthetic workload model (M/G/1 queue with burst parameterization) designed to demonstrate comparative scheduling behavior and algorithmic dynamics for academic study, rather than live production telemetric probes.
+          </p>
+<div class="pt-space-xs font-label-sm text-label-sm text-outline uppercase">
+            COMPUTATIONAL DISPATCH LABORATORY // REPRODUCIBLE SEED: #028-2025-ARCH
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Action Drawer / Anchor to Simulator -->
+<section class="w-full px-margin-md lg:px-margin-lg pb-space-2xl bg-surface">
+<div class="p-space-xl bg-on-surface text-surface flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg shadow-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-primary-fixed block mb-1">
+          OPERATIONAL TESTBENCH AVAILABLE
+        </span>
+<h2 class="font-headline-md text-headline-md uppercase text-surface">
+          READY TO RUN COMPARATIVE TELEMETRY?
+        </h2>
+<p class="font-body-sm text-body-sm text-secondary-fixed mt-1">
+          Simulate synchronous bursts with custom quantum values, injection spikes, and examinee queues.
+        </p>
+</div>
+<div class="flex items-center gap-space-md">
+<a class="px-space-lg py-space-sm bg-primary-container text-on-primary-fixed font-label-md text-label-md uppercase tracking-wider hover:bg-surface hover:text-on-surface transition-colors flex items-center gap-space-xs shadow-sm" data-path="simulator" href="#">
+<span>LAUNCH SIMULATOR</span>
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</a>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface border-t border-on-surface py-space-md"><div class="w-full px-margin-md lg:px-margin-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase"><div>EXAMCORE — USN 25BTRIS028 // CPU SCHEDULING SIMULATION</div><div class="flex items-center gap-space-lg"><span class="text-on-surface">KERNEL ARCH // REV 04</span><span>LATENCY: 0.12MS</span></div></div></footer></body></html>

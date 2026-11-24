@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;family=Syne:wght@400..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"error":"#ba1a1a","surface-container-highest":"#e5e2da","on-secondary":"#ffffff","on-secondary-fixed-variant":"#474646","tertiary":"#5e5f58","surface-bright":"#fcf9f1","surface-variant":"#e5e2da","surface":"#fcf9f1","on-tertiary-container":"#64655e","background":"#fcf9f1","on-surface":"#1c1c17","tertiary-fixed":"#e4e3da","inverse-primary":"#add450","surface-dim":"#dddad2","on-tertiary-fixed-variant":"#464741","on-primary":"#ffffff","inverse-on-surface":"#f4f1e9","on-secondary-container":"#636262","outline-variant":"#c4c9b2","outline":"#757966","on-error-container":"#93000a","on-background":"#1c1c17","surface-tint":"#4d6700","surface-container":"#f1eee6","on-tertiary":"#ffffff","on-primary-fixed":"#151f00","surface-container-high":"#ebe8e0","secondary-fixed-dim":"#c8c6c5","on-error":"#ffffff","inverse-surface":"#31312b","on-surface-variant":"#444938","primary-fixed":"#c8f169","secondary-container":"#e2dfde","on-primary-fixed-variant":"#394d00","tertiary-fixed-dim":"#c7c7be","primary-fixed-dim":"#add450","secondary":"#5f5e5e","on-tertiary-fixed":"#1b1c17","primary":"#4d6700","error-container":"#ffdad6","secondary-fixed":"#e5e2e1","surface-container-lowest":"#ffffff","surface-container-low":"#f6f3eb","on-primary-container":"#516d00","primary-container":"#c8f169","on-secondary-fixed":"#1c1b1b","tertiary-container":"#e4e3da"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","gutter-lg":"2rem","space-2xl":"4rem","margin":"1rem","gutter-md":"1.5rem","margin-lg":"3rem","space-xl":"2.5rem","margin-md":"2rem","gutter":"1rem","space-md":"1rem","space-xs":"0.25rem","space-sm":"0.5rem"},"fontFamily":{"label-md":["Space Mono"],"body-sm":["Space Mono"],"headline-lg":["Syne"],"body-md":["Space Mono"],"headline-sm":["Syne"],"headline-2xl-mobile":["Syne"],"headline-2xl":["Syne"],"body-lg":["Space Mono"],"label-sm":["Space Mono"],"headline-xl-mobile":["Syne"],"headline-md":["Syne"],"label-lg":["Space Mono"],"headline-xl":["Syne"]},"fontSize":{"label-md":["0.75rem",{"lineHeight":"1.2","letterSpacing":"0.08em","fontWeight":"700"}],"body-sm":["0.75rem",{"lineHeight":"1.6","letterSpacing":"0.02em","fontWeight":"400"}],"headline-lg":["2.25rem",{"lineHeight":"1.05","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["0.875rem",{"lineHeight":"1.55","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["1.125rem",{"lineHeight":"1.25","letterSpacing":"0em","fontWeight":"600"}],"headline-2xl-mobile":["3rem",{"lineHeight":"0.95","letterSpacing":"-0.03em","fontWeight":"800"}],"headline-2xl":["5.5rem",{"lineHeight":"0.92","letterSpacing":"-0.04em","fontWeight":"800"}],"body-lg":["1rem",{"lineHeight":"1.5","letterSpacing":"-0.01em","fontWeight":"400"}],"label-sm":["0.625rem",{"lineHeight":"1.1","letterSpacing":"0.1em","fontWeight":"700"}],"headline-xl-mobile":["2.25rem",{"lineHeight":"1.0","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["1.5rem",{"lineHeight":"1.15","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["0.875rem",{"lineHeight":"1.2","letterSpacing":"0.05em","fontWeight":"700"}],"headline-xl":["3.75rem",{"lineHeight":"0.96","letterSpacing":"-0.03em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface border-b border-on-surface"><div class="h-16 w-full px-margin-md lg:px-margin-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface">EXAMCORE</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 bg-surface-container-high border border-on-surface text-on-surface">25BTRIS028</span></div><nav class="hidden md:flex items-center h-full border-x border-on-surface" data-active-classes="bg-on-surface text-surface"><a class="h-full px-space-lg flex items-center font-label-md text-label-md uppercase text-on-surface-variant hover:bg-on-surface hover:text-surface transition-colors border-r border-on-surface last:border-r-0" data-path="overview" href="#">Overview</a><a class="h-full px-space-lg flex items-center font-label-md text-label-md uppercase text-on-surface-variant hover:bg-on-surface hover:text-surface transition-colors border-r border-on-surface last:border-r-0" data-path="simulator" href="#">Simulator</a><a aria-current="page" class="h-full px-space-lg flex items-center font-label-md uppercase transition-colors border-r border-on-surface last:border-r-0 bg-on-surface text-surface" data-path="results" href="#">Results</a><a class="h-full px-space-lg flex items-center font-label-md text-label-md uppercase text-on-surface-variant hover:bg-on-surface hover:text-surface transition-colors" data-path="about" href="#">About</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container border border-on-surface"><span class="w-2 h-2 bg-primary-container inline-block"></span><span class="font-label-sm text-label-sm uppercase text-on-surface">SYS: READY</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 flex-1 bg-surface"><div class="flex flex-col w-full">
+<!-- TOP TELEMETRY STRIP -->
+<section class="w-full bg-surface border-b border-on-surface">
+<div class="px-margin-md lg:px-margin-lg py-space-sm flex flex-wrap items-center justify-between gap-space-sm font-label-sm text-label-sm uppercase">
+<div class="flex items-center gap-space-md">
+<span class="text-on-surface flex items-center gap-1.5 font-bold">
+<span class="w-2 h-2 bg-primary-container inline-block"></span>
+          TRACE ID: 0x9AF4_RUN_08
+        </span>
+<span class="text-on-surface-variant">WORKLOAD: 50 BATCH POST PACKETS</span>
+<span class="text-on-surface-variant">ENV: X86_64 V-TOPOLOGY</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="text-on-surface-variant">COMPILED: T+0.042S</span>
+<span class="px-space-xs py-0.5 bg-on-surface text-surface">VERIFIED DETERMINISTIC</span>
+</div>
+</div>
+</section>
+<!-- EDITORIAL HEADER HERO -->
+<section class="w-full bg-surface border-b border-on-surface px-margin-md lg:px-margin-lg py-space-xl lg:py-space-2xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">
+<span class="w-2 h-2 bg-on-surface inline-block"></span>
+<span>02.00 // TELEMETRIC POST-PROCESSING &amp; BENCHMARK MATRIX</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-end">
+<div class="lg:col-span-8">
+<h1 class="font-headline-2xl text-headline-2xl uppercase tracking-tighter text-on-surface leading-none m-0">
+            THE RESULTS
+          </h1>
+</div>
+<div class="lg:col-span-4 pb-2">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Compare how different CPU scheduling strategies handle the same workload under identical synthetic pressure.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- CRITICAL ARCHITECTURAL VERDICT BANNER -->
+<section class="w-full bg-primary-container border-b border-on-surface px-margin-md lg:px-margin-lg py-space-md text-on-primary-container">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<span class="font-label-md text-label-md uppercase px-space-xs py-0.5 bg-on-surface text-surface">
+          VERDICT SIGNAL
+        </span>
+<span class="font-body-md text-body-md font-bold text-on-surface">
+          Round Robin eliminates student browser UI freezes and convoy stalls at the minor cost of 0.48ms context switch overhead.
+        </span>
+</div>
+<div class="flex items-center gap-space-sm self-end md:self-auto font-label-sm text-label-sm uppercase text-on-surface">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span>DELTA ADVANTAGE: PREEMPTIVE RR</span>
+</div>
+</div>
+</section>
+<!-- COMPARISON ARCHITECTURE MATRIX (4 HIGH-CONTRAST METRIC BLOCKS) -->
+<section class="w-full bg-surface border-b border-on-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-on-surface border-x border-on-surface">
+<!-- METRIC 1: AVERAGE WAITING TIME -->
+<div class="p-space-lg flex flex-col justify-between bg-surface">
+<div>
+<div class="flex items-center justify-between gap-2 pb-space-sm border-b border-on-surface/20">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">01 // LATENCY</span>
+<span class="font-label-sm text-label-sm uppercase px-1.5 py-0.5 bg-primary-container text-on-surface border border-on-surface">
+              FAIR DISPATCH
+            </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface mt-space-md mb-space-lg">
+            Avg Waiting Time
+          </h2>
+<div class="space-y-space-md">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm uppercase text-on-surface-variant">
+<span>FCFS (Baseline)</span>
+<span class="text-error font-bold">14.15 ms</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high border border-on-surface mt-1">
+<div class="h-full bg-secondary" style="width: 100%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm uppercase text-on-surface-variant">
+<span>Round Robin (Q=5ms)</span>
+<span class="text-primary font-bold">4.35 ms</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high border border-on-surface mt-1">
+<div class="h-full bg-primary" style="width: 30.7%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-xl">
+<div class="font-headline-xl text-headline-xl text-on-surface tracking-tighter leading-none">
+            -69.2%
+          </div>
+<div class="font-label-sm text-label-sm uppercase text-on-surface-variant mt-space-xs">
+            Net Queuing Delay Reduction
+          </div>
+</div>
+</div>
+<!-- METRIC 2: AVERAGE TURNAROUND TIME -->
+<div class="p-space-lg flex flex-col justify-between bg-surface">
+<div>
+<div class="flex items-center justify-between gap-2 pb-space-sm border-b border-on-surface/20">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">02 // THROUGHPUT</span>
+<span class="font-label-sm text-label-sm uppercase px-1.5 py-0.5 bg-surface-container-high text-on-surface border border-on-surface">
+              WINNER: RR
+            </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface mt-space-md mb-space-lg">
+            Avg Turnaround
+          </h2>
+<div class="space-y-space-md">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm uppercase text-on-surface-variant">
+<span>FCFS (Baseline)</span>
+<span class="text-on-surface font-bold">18.42 ms</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high border border-on-surface mt-1">
+<div class="h-full bg-secondary" style="width: 100%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm uppercase text-on-surface-variant">
+<span>Round Robin (Q=5ms)</span>
+<span class="text-primary font-bold">8.62 ms</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high border border-on-surface mt-1">
+<div class="h-full bg-primary" style="width: 46.8%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-xl">
+<div class="font-headline-xl text-headline-xl text-on-surface tracking-tighter leading-none">
+            -53.2%
+          </div>
+<div class="font-label-sm text-label-sm uppercase text-on-surface-variant mt-space-xs">
+            Cycle Resolution Speedup
+          </div>
+</div>
+</div>
+<!-- METRIC 3: INITIAL RESPONSE TIME -->
+<div class="p-space-lg flex flex-col justify-between bg-surface">
+<div>
+<div class="flex items-center justify-between gap-2 pb-space-sm border-b border-on-surface/20">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">03 // PERCEPTION</span>
+<span class="font-label-sm text-label-sm uppercase px-1.5 py-0.5 bg-primary-container text-on-surface border border-on-surface">
+              CRITICAL
+            </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface mt-space-md mb-space-lg">
+            First Response
+          </h2>
+<div class="space-y-space-md">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm uppercase text-on-surface-variant">
+<span>FCFS (Baseline)</span>
+<span class="text-error font-bold">12.80 ms</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high border border-on-surface mt-1">
+<div class="h-full bg-secondary" style="width: 100%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm uppercase text-on-surface-variant">
+<span>Round Robin (Q=5ms)</span>
+<span class="text-primary font-bold">3.10 ms</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high border border-on-surface mt-1">
+<div class="h-full bg-primary" style="width: 24.2%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-xl">
+<div class="font-headline-xl text-headline-xl text-on-surface tracking-tighter leading-none">
+            -75.8%
+          </div>
+<div class="font-label-sm text-label-sm uppercase text-on-surface-variant mt-space-xs">
+            Client Perceived Lag Delta
+          </div>
+</div>
+</div>
+<!-- METRIC 4: CPU UTILISATION -->
+<div class="p-space-lg flex flex-col justify-between bg-surface-container-low">
+<div>
+<div class="flex items-center justify-between gap-2 pb-space-sm border-b border-on-surface/20">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">04 // HARDWARE</span>
+<span class="font-label-sm text-label-sm uppercase px-1.5 py-0.5 bg-surface-container text-on-surface-variant border border-on-surface">
+              EFFICIENCY
+            </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface mt-space-md mb-space-lg">
+            CPU Utilisation
+          </h2>
+<div class="space-y-space-md">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm uppercase text-on-surface-variant">
+<span>FCFS (0 Swaps)</span>
+<span class="text-on-surface font-bold">98.4%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container border border-on-surface mt-1">
+<div class="h-full bg-on-surface" style="width: 98.4%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm uppercase text-on-surface-variant">
+<span>Round Robin</span>
+<span class="text-on-surface font-bold">96.2%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container border border-on-surface mt-1">
+<div class="h-full bg-outline" style="width: 96.2%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-xl">
+<div class="font-headline-xl text-headline-xl text-on-surface-variant tracking-tighter leading-none">
+            -2.2%
+          </div>
+<div class="font-label-sm text-label-sm uppercase text-error mt-space-xs">
+            Context Switch Overhead Cost
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- ALGORITHMIC PROFILE HEAD-TO-HEAD SPECIFICATION & BAR CHART -->
+<section class="w-full bg-surface border-b border-on-surface px-margin-md lg:px-margin-lg py-space-xl">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- LEFT SPEC PANEL: 2 PROFILES -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">
+          STRATEGY SPECIFICATION // TOPOLOGY COMPARISON
+        </div>
+<!-- FCFS CARD -->
+<div class="border border-on-surface p-space-md bg-surface-container-low">
+<div class="flex items-center justify-between pb-space-xs border-b border-on-surface/20">
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface">PROFILE 01: FCFS (BASELINE)</span>
+<span class="font-label-sm text-label-sm text-error uppercase">NON-PREEMPTIVE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm mb-space-sm leading-relaxed">
+            Convoy execution locks core until longest burst finishes. Causes head-of-line blocking for lightweight user keystroke/submission threads.
+          </p>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant uppercase pt-space-xs border-t border-on-surface/10">
+<span>BURST VARIANCE: HIGH</span>
+<span>SWITCHES: 0</span>
+</div>
+</div>
+<!-- ROUND ROBIN CARD -->
+<div class="border border-on-surface p-space-md bg-surface">
+<div class="flex items-center justify-between pb-space-xs border-b border-on-surface/20">
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface">PROFILE 02: ROUND ROBIN</span>
+<span class="font-label-sm text-label-sm px-1 bg-primary-container text-on-surface uppercase border border-on-surface">Q = 5.0MS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm mb-space-sm leading-relaxed">
+            Preemptive time slicing guarantees immediate core share to every candidate thread. Prevents starvation and protects responsiveness.
+          </p>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant uppercase pt-space-xs border-t border-on-surface/10">
+<span>PREEMPTION: TIME-SLICED</span>
+<span>SWITCH PENALTY: 0.04MS</span>
+</div>
+</div>
+<!-- SCHEDULER DIAGRAM CHIP -->
+<div class="border border-on-surface p-space-sm bg-surface-container-high flex items-center justify-between font-label-sm text-label-sm uppercase">
+<span class="text-on-surface">CONTEXT RESCUE RATIO</span>
+<span class="font-bold text-primary">100% DEADLOCK-FREE</span>
+</div>
+</div>
+<!-- RIGHT VISUAL DATA CANVAS: MINIMALIST HORIZONTAL COMPARISON GRAPH -->
+<div class="lg:col-span-7 border border-on-surface p-space-md lg:p-space-lg flex flex-col justify-between bg-surface-container-lowest">
+<div>
+<div class="flex items-center justify-between pb-space-sm border-b border-on-surface">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-on-surface font-bold">COMPARATIVE HORIZONTAL EXECUTION MATRIX</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Standardized scale mapping response and turnaround against millisecond threshold</p>
+</div>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm uppercase">
+<span class="flex items-center gap-1"><span class="w-3 h-3 bg-secondary inline-block border border-on-surface"></span> FCFS</span>
+<span class="flex items-center gap-1"><span class="w-3 h-3 bg-primary-container inline-block border border-on-surface"></span> RR (5MS)</span>
+</div>
+</div>
+<!-- CHART CONTAINER -->
+<div class="mt-space-lg space-y-space-xl">
+<!-- BAR GROUP 1: WAITING TIME -->
+<div>
+<div class="flex justify-between font-label-sm text-label-sm uppercase mb-space-xs text-on-surface">
+<span>WAITING TIME (MS)</span>
+<span>TARGET: &lt; 5.0MS</span>
+</div>
+<div class="space-y-1.5">
+<div class="flex items-center gap-2">
+<span class="w-16 font-label-sm text-label-sm text-on-surface-variant uppercase">FCFS</span>
+<div class="flex-1 bg-surface-container h-7 border border-on-surface relative overflow-hidden">
+<div class="bg-secondary h-full flex items-center justify-end px-2 text-surface font-label-sm text-label-sm font-bold" style="width: 76.8%;">
+                      14.15 MS
+                    </div>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-16 font-label-sm text-label-sm text-on-surface-variant uppercase">RR</span>
+<div class="flex-1 bg-surface-container h-7 border border-on-surface relative overflow-hidden">
+<div class="bg-primary-container h-full flex items-center justify-end px-2 text-on-surface font-label-sm text-label-sm font-bold border-r border-on-surface" style="width: 23.6%;">
+                      4.35 MS
+                    </div>
+</div>
+</div>
+</div>
+</div>
+<!-- BAR GROUP 2: TURNAROUND TIME -->
+<div>
+<div class="flex justify-between font-label-sm text-label-sm uppercase mb-space-xs text-on-surface">
+<span>TURNAROUND TIME (MS)</span>
+<span>TARGET: &lt; 10.0MS</span>
+</div>
+<div class="space-y-1.5">
+<div class="flex items-center gap-2">
+<span class="w-16 font-label-sm text-label-sm text-on-surface-variant uppercase">FCFS</span>
+<div class="flex-1 bg-surface-container h-7 border border-on-surface relative overflow-hidden">
+<div class="bg-secondary h-full flex items-center justify-end px-2 text-surface font-label-sm text-label-sm font-bold" style="width: 100%;">
+                      18.42 MS
+                    </div>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-16 font-label-sm text-label-sm text-on-surface-variant uppercase">RR</span>
+<div class="flex-1 bg-surface-container h-7 border border-on-surface relative overflow-hidden">
+<div class="bg-primary-container h-full flex items-center justify-end px-2 text-on-surface font-label-sm text-label-sm font-bold border-r border-on-surface" style="width: 46.7%;">
+                      8.62 MS
+                    </div>
+</div>
+</div>
+</div>
+</div>
+<!-- X-AXIS TICKS -->
+<div class="pt-space-xs border-t border-on-surface/20 flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>0.0MS</span>
+<span>5.0MS</span>
+<span>10.0MS</span>
+<span>15.0MS</span>
+<span>20.0MS</span>
+</div>
+</div>
+</div>
+<!-- FOOTNOTE INSIDE CHART -->
+<div class="mt-space-lg pt-space-sm border-t border-on-surface/20 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase">
+<span>SAMPLE SET: N=50 UNIFORM PACKETS</span>
+<span class="text-on-surface font-bold">DELTA MARGIN: +9.80 MS STALL BUFFER ELIMINATED</span>
+</div>
+</div>
+</div>
+</section>
+<!-- EXPANDABLE DETAILED METRICS DISCLOSURE DRAWER -->
+<section class="w-full bg-surface border-b border-on-surface">
+<div class="max-w-7xl mx-auto border-x border-on-surface">
+<button class="w-full px-space-md lg:px-space-lg py-space-md bg-surface-container-high hover:bg-surface-container-highest transition-colors flex items-center justify-between text-left font-label-md text-label-md uppercase text-on-surface cursor-pointer focus:outline-none" id="accordion-toggle" onclick="const el = document.getElementById('telemetry-drawer'); const icon = document.getElementById('drawer-icon'); const isOpen = !el.classList.contains('hidden'); if(isOpen){ el.classList.add('hidden'); icon.innerText='keyboard_arrow_down'; } else { el.classList.remove('hidden'); icon.innerText='keyboard_arrow_up'; }" type="button">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 bg-on-surface inline-block"></span>
+<span>VIEW DETAILED METRICS &amp; ARCHITECTURAL SPECIFICATION</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">TECHNICAL BREAKDOWN</span>
+<span class="material-symbols-outlined text-on-surface" id="drawer-icon">keyboard_arrow_down</span>
+</div>
+</button>
+<div class="hidden border-t border-on-surface bg-surface-container-low p-space-md lg:p-space-lg" id="telemetry-drawer">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- ITEM 1: CONTEXT SWITCH PENALTY BREAKDOWN -->
+<div class="border border-on-surface bg-surface p-space-md flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant block pb-space-xs border-b border-on-surface/20">
+                01. CONTEXT SWITCH COST
+              </span>
+<div class="font-headline-md text-headline-md uppercase text-on-surface mt-space-sm mb-space-xs">
+                0.48 ms Total
+              </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Calculated as <span class="font-bold text-on-surface">0.04ms</span> state swap penalty across <span class="font-bold text-on-surface">12 preemptive preemptions</span>.
+              </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-on-surface/10 font-label-sm text-label-sm text-on-surface-variant uppercase">
+              REGISTER RESTORE: 12 CYCLES
+            </div>
+</div>
+<!-- ITEM 2: CONVOY BLOCK PROBABILITY -->
+<div class="border border-on-surface bg-surface p-space-md flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant block pb-space-xs border-b border-on-surface/20">
+                02. CONVOY BLOCK PROBABILITY
+              </span>
+<div class="flex items-baseline gap-2 mt-space-sm mb-space-xs">
+<span class="font-headline-md text-headline-md text-error uppercase">88.4%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">VS</span>
+<span class="font-headline-md text-headline-md text-primary uppercase">0.0%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                FCFS represents catastrophic convoy risk during high-burst arrival spikes. RR completely eliminates pipeline locks.
+              </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-on-surface/10 font-label-sm text-label-sm text-primary uppercase font-bold">
+              RISK STATE: FULLY MITIGATED
+            </div>
+</div>
+<!-- ITEM 3: SIMULATION TOPOLOGY ASSUMPTIONS -->
+<div class="border border-on-surface bg-surface p-space-md flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant block pb-space-xs border-b border-on-surface/20">
+                03. WORKLOAD SPECIFICATIONS
+              </span>
+<div class="font-headline-md text-headline-md uppercase text-on-surface mt-space-sm mb-space-xs">
+                50 HTTP POSTs
+              </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Burst variance std dev <span class="font-bold text-on-surface">σ = 4.2ms</span>. Simulated on an unthrottled x86_64 4-core virtual topology under uniform distribution.
+              </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-on-surface/10 font-label-sm text-label-sm text-on-surface-variant uppercase">
+              DISTRIBUTION: GAUSSIAN BURST
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BENCHMARK TELEMETRY RAW DATA LOG TABLE -->
+<section class="w-full bg-surface border-b border-on-surface px-margin-md lg:px-margin-lg py-space-xl">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-start md:items-end justify-between pb-space-md border-b border-on-surface gap-space-sm">
+<div>
+<span class="font-label-md text-label-md uppercase text-on-surface-variant">SAMPLE AUDIT LOG</span>
+<h3 class="font-headline-md text-headline-md uppercase tracking-tight text-on-surface mt-0">
+            DISPATCH ITERATION TRACE (FIRST 5 PACKETS)
+          </h3>
+</div>
+<div class="font-label-sm text-label-sm uppercase text-on-surface-variant">
+          TIMESTAMP: 2025-02-24T14:28:09.110Z
+        </div>
+</div>
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse border-b border-on-surface">
+<thead>
+<tr class="border-b border-on-surface font-label-sm text-label-sm uppercase bg-surface-container-high text-on-surface">
+<th class="py-space-sm px-space-md border-r border-on-surface">PID</th>
+<th class="py-space-sm px-space-md border-r border-on-surface">ARRIVAL</th>
+<th class="py-space-sm px-space-md border-r border-on-surface">BURST (MS)</th>
+<th class="py-space-sm px-space-md border-r border-on-surface">FCFS WAIT</th>
+<th class="py-space-sm px-space-md border-r border-on-surface">RR WAIT (Q=5)</th>
+<th class="py-space-sm px-space-md border-r border-on-surface">PREEMPTIONS</th>
+<th class="py-space-sm px-space-md">EFFICIENCY DELTA</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-on-surface divide-y divide-on-surface/20">
+<tr class="hover:bg-primary-container transition-colors">
+<td class="py-space-sm px-space-md border-r border-on-surface font-bold">P_001</td>
+<td class="py-space-sm px-space-md border-r border-on-surface">0.00 MS</td>
+<td class="py-space-sm px-space-md border-r border-on-surface">12.40 MS</td>
+<td class="py-space-sm px-space-md border-r border-on-surface">0.00 MS</td>
+<td class="py-space-sm px-space-md border-r border-on-surface">0.00 MS</td>
+<td class="py-space-sm px-space-md border-r border-on-surface">2</td>
+<td class="py-space-sm px-space-md font-bold text-on-surface">EQUIVALENT</td>
+</tr>
+<tr class="hover:bg-primary-container transition-colors">
+<td class="py-space-sm px-space-md border-r border-on-surface font-bold">P_002</td>
+<td class="py-space-sm px-space-md border-r border-on-surface">0.40 MS</td>
+<td class="py-space-sm px-space-md border-r border-on-surface">3.20 MS</td>
+<td class="py-space-sm px-space-md border-r border-on-surface text-error">12.00 MS</td>
+<td class="py-space-sm px-space-md border-r border-on-surface text-primary font-bold">4.60 MS</td>
+<td class="py-space-sm px-space-md border-r border-on-surface">0</td>
+<td class="py-space-sm px-space-md font-bold text-primary">-61.6% DELAY</td>
+</tr>
+<tr class="hover:bg-primary-container transition-colors">
+<td class="py-space-sm px-space-md border-r border-on-surface font-bold">P_003</td>
+<td class="py-space-sm px-space-md border-r border-on-surface">1.10 MS</td>
+<td class="py-space-sm px-space-md border-r border-on-surface">2.10 MS</td>
+<td class="py-space-sm px-space-md border-r border-on-surface text-error">14.50 MS</td>
+<td class="py-space-sm px-space-md border-r border-on-surface text-primary font-bold">6.70 MS</td>
+<td class="py-space-sm px-space-md border-r border-on-surface">0</td>
+<td class="py-space-sm px-space-md font-bold text-primary">-53.8% DELAY</td>
+</tr>
+<tr class="hover:bg-primary-container transition-colors">
+<td class="py-space-sm px-space-md border-r border-on-surface font-bold">P_004</td>
+<td class="py-space-sm px-space-md border-r border-on-surface">1.80 MS</td>
+<td class="py-space-sm px-space-md border-r border-on-surface">8.90 MS</td>
+<td class="py-space-sm px-space-md border-r border-on-surface text-error">15.90 MS</td>
+<td class="py-space-sm px-space-md border-r border-on-surface text-primary font-bold">7.20 MS</td>
+<td class="py-space-sm px-space-md border-r border-on-surface">1</td>
+<td class="py-space-sm px-space-md font-bold text-primary">-54.7% DELAY</td>
+</tr>
+<tr class="hover:bg-primary-container transition-colors">
+<td class="py-space-sm px-space-md border-r border-on-surface font-bold">P_005</td>
+<td class="py-space-sm px-space-md border-r border-on-surface">2.20 MS</td>
+<td class="py-space-sm px-space-md border-r border-on-surface">1.80 MS</td>
+<td class="py-space-sm px-space-md border-r border-on-surface text-error">24.50 MS</td>
+<td class="py-space-sm px-space-md border-r border-on-surface text-primary font-bold">3.20 MS</td>
+<td class="py-space-sm px-space-md border-r border-on-surface">0</td>
+<td class="py-space-sm px-space-md font-bold text-primary">-86.9% DELAY</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- BOTTOM CALL TO ACTION STRIP -->
+<section class="w-full bg-surface-container py-space-xl px-margin-md lg:px-margin-lg border-b border-on-surface">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs text-center md:text-left">
+<span class="font-label-md text-label-md uppercase text-on-surface font-bold">READY TO ALTER SIMULATION PARAMETERS?</span>
+<p class="font-body-md text-body-md text-on-surface-variant m-0">
+          Adjust quantum size, load distribution, or test Priority / Shortest Job First schedules.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-md">
+<a class="font-label-md text-label-md uppercase text-on-surface underline underline-offset-4 hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>EXPORT BENCHMARK LOG (.CSV)</span>
+</a>
+<a class="px-space-lg py-space-md bg-primary-container text-on-surface font-label-md text-label-md uppercase tracking-wider border border-on-surface hover:bg-on-surface hover:text-surface transition-colors flex items-center gap-space-sm shadow-[3px_3px_0px_#1c1c17]" href="#">
+<span>RUN ANOTHER SIMULATION</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface border-t border-on-surface py-space-md"><div class="w-full px-margin-md lg:px-margin-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase"><div>EXAMCORE — USN 25BTRIS028 // CPU SCHEDULING SIMULATION</div><div class="flex items-center gap-space-lg"><span class="text-on-surface">KERNEL ARCH // REV 04</span><span>LATENCY: 0.12MS</span></div></div></footer></body></html>
